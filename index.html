@@ -20,10 +20,12 @@
     <script type="text/javascript">
       window.onload = function()
       {
-        var clk = document.getElementById("demo");
+        var demo = document.getElementById("demo");
+        var demo2 = document.getElementById("demo2");
         var test = document.getElementById("test");
-        test.className = "animated fadeInDownBig";
-        clk.className = "animated bounceInRight";
+        demo.className = "animated bounceIn";
+        demo2.className = "animated slideInRight";
+        test.className = "animated slideInLeft";
       }
     </script>
   </head>
@@ -36,11 +38,10 @@
             <a href=""><img src="assets/img/logo.png" id="test"></a>
           </div> <!--company-logo-->
         </div> <!--company-logo-->
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="margin-top:20px">
-          <div class="round l2 pull-right">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="demo2">
+          <div class="round pull-right">
             About Us
           </div>
-
           <div class="round pull-right">
             Work with us
           </div>
@@ -56,9 +57,9 @@
       <div class="row">
       </div> <!-- row navogation bar -->
 
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h1 id="demo"> We Automate The Business <br>Using <br>Technology</h1>
+      <div class="row" id="demo">
+        <div class="col-xs-12 text-center tagline">
+          <h1> We Automate The Business <br>Using <br>Technology</h1>
         </div>  <!-- tag line -->
       </div> <!-- row tag line -->
       <div class="row">
