@@ -32,6 +32,8 @@ body{
   font-family:sans-serif serif;
   line-height:1.5em;
   font-size:4em;
+  box-shadow: 3px 3px 9px #DDD;
+    border-radius: 7px;
 }
 
 /* Custom Bootstrap CSS */
@@ -65,51 +67,6 @@ body{
 .navbar-inverse .navbar-form {
   border-color: #eeeeee;
 }
-
-.heading
-{
-    background: #88B554;
-    margin: 30px;
-    padding-top:2%;
-    padding-bottom:2%;
-    padding: 5px;
-    text-align: center;
-    box-shadow: 3px 3px 9px #DDD;
-    border-radius: 7px;
-}
-
-.head{
-    font-family:sans-serif serif;
-    text-decoration: none;
-    color: #222;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-shadow: #2c2c2c 3px 3px 5px;
-}
-.head:hover
-{
-    color:white;
-    transition: 0.4s;
-    text-shadow: #000 3px 3px 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!--  extra try -->
 
