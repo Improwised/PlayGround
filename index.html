@@ -4,7 +4,7 @@
     <title>Improwised</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css"></link>
     <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="assets/css/site.css" rel="stylesheet">
     
@@ -17,6 +17,15 @@
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+      window.onload = function()
+      {
+        var clk = document.getElementById("demo");
+        var test = document.getElementById("test");
+        test.className = "animated fadeInDownBig";
+        clk.className = "animated bounceInRight";
+      }
+    </script>
   </head>
 
   <body>
@@ -24,7 +33,7 @@
       <div class="row">        
         <div class="col-lg-4 ">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <a href=""><img src="assets/img/logo.png" id="img"></a>
+            <a href=""><img src="assets/img/logo.png" id="test"></a>
           </div> <!--company-logo-->
         </div> <!--company-logo-->
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="margin-top:20px">
@@ -32,13 +41,13 @@
             About Us
           </div>
 
-          <div class="round l2 pull-right">
+          <div class="round pull-right">
             Work with us
           </div>
-          <div class="round l2 pull-right">
+          <div class="round pull-right">
             Team Mates
           </div>
-          <div class="round l2 pull-right">
+          <div class="round pull-right">
             Home
           </div>
         </div>
@@ -49,7 +58,7 @@
 
       <div class="row">
         <div class="col-xs-12 text-center">
-          <h1> We Automate The Business <br>Using <br>Technology</h1>
+          <h1 id="demo"> We Automate The Business <br>Using <br>Technology</h1>
         </div>  <!-- tag line -->
       </div> <!-- row tag line -->
       <div class="row">
