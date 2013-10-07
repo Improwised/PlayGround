@@ -26,12 +26,14 @@
     <script type="text/javascript">
       window.onload = function()
       {
+        var logo = document.getElementById("logo");
         var demo = document.getElementById("demo");
         var demo2 = document.getElementById("demo2");
-        var test = document.getElementById("test");
-        demo.className = "animated bounceIn";
+        var tag = document.getElementById("tag");
+        logo.className = "animated slideInLeft";
+        demo.className = "animated fadeInDownBig";
         demo2.className = "animated slideInRight";
-        test.className = "animated slideInLeft";
+
       }
     </script>
   </head>
@@ -41,13 +43,13 @@
       <!-- Navigation Header -->
       <header>
         <div class="row">        
-          <div class="col-lg-4 ">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <a href=""><img src="assets/img/logo.png" id="test"></a>
-            </div> <!--company-logo-->
+          <div class="col-lg-4">
+
+              <a href=""><img src="assets/img/logo.png" id="logo"></a>
+
           </div> <!--company-logo-->
 
-          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="margin-top:20px">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="margin-top:20px" id="demo2">
             <div class="round l2 pull-right">
               <a href="views/about_us.html">About Us</a>
             </div>
@@ -61,8 +63,9 @@
               <a href="index.html">Home</a>
             </div>
           </div>
+        
         </div>
-      </header>
+       </header>
       <!-- Navigation Header Ends -->
 
       <div class="row">
@@ -71,7 +74,7 @@
       <div class="row" id="demo">
         <!-- Tage Line -->
         <div class="col-xs-12 text-center tagline">
-          <h1> We Automate The Business <br>Using <br>Technology</h1>
+          <h1 id="tag"> We Automate The Business <br>Using <br>Technology</h1>
         </div>
         <!-- Tag Line Ends -->
       </div>
