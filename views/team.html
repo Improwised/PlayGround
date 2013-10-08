@@ -28,10 +28,20 @@
       {
         var demo = document.getElementById("demo");
         var demo2 = document.getElementById("demo2");
-        var test = document.getElementById("test");
+        var logo = document.getElementById("logo");
         demo.className = "animated bounceIn";
         demo2.className = "animated slideInRight";
-        test.className = "animated slideInLeft";
+        logo.className = "animated slideInLeft";
+
+        var tag1 = document.getElementById("tag1");
+        var tag2 = document.getElementById("tag2");
+        var tag3 = document.getElementById("tag3");
+        var tag4 = document.getElementById("tag4");
+
+        tag1.className = "animated bounceInLeft";
+        tag2.className = "animated bounceInRight";
+        tag3.className = "animated bounceInDown";
+        tag4.className = "animated bounceInUp";
       }
     </script>
   </head>
@@ -66,7 +76,12 @@
       <!-- Tage Line -->
       <div class="row" id="demo">
         <div class="col-xs-12 text-center tagline">
-          <h1><strong>Teamwork</strong> makes the <strong>Dreamwork</strong></h1>
+          <h1>
+            <strong><label id="tag1">Teamwork</label></strong>
+            <label id="tag2"> makes</label>
+            <label id="tag3"> the</label>
+            <strong><label id="tag4">Dreamwork</label></strong>
+          </h1>
         </div>
       </div>
       <!-- Tag Line Ends -->
