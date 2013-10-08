@@ -35,6 +35,11 @@
         demo2.className = "animated slideInRight";
 
       }
+      function shake()
+      {
+        var logo = document.getElementById("logo");
+        logo.className = "animated tada";
+      }
     </script>
   </head>
 
@@ -45,25 +50,42 @@
         <div class="row">        
           <div class="col-lg-4">
 
-              <a href=""><img src="assets/img/logo.png" id="logo"></a>
+              <a href=""><img src="assets/img/logo.png" id="logo" onmouseover="shake()"></a>
 
           </div> <!--company-logo-->
 
-          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="margin-top:20px" id="demo2">
-            <div class="round l2 pull-right">
+          <!-- <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="margin-top:20px" id="demo2">
+            <div class="round pull-right">
               <a href="views/about_us.html">About Us</a>
             </div>
             <div class="round pull-right">
               <a href="views/work_with_us.html">Work with us</a>
             </div>
             <div class="round pull-right">
-              <a href="views/team.html">Team Mates</a>
+              <a href="views/team.html" class="home">Team Mates</a>
             </div>
             <div class="round pull-right">
-              <a href="index.html">Home</a>
+              <a href="index.html" class="home">Home</a>
             </div>
-          </div>
-        
+          </div> -->
+
+
+
+
+<nav class="pull-right">
+  <ul style="margin-top:70px;" id="demo2">
+    <li><a href="#" id="ddd" onmouseover = "test()">Home</a></li>
+    <li><a href="#">Team Mates</a></li>
+    <li><a href="#">Work with Us</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+
         </div>
        </header>
       <!-- Navigation Header Ends -->
@@ -73,7 +95,7 @@
 
       <div class="row" id="demo">
         <!-- Tage Line -->
-        <div class="col-xs-12 text-center tagline">
+        <div class="col-xs-12 text-center tagline" style="margin-top:-15px">
           <h1 id="tag"> We Automate The Business <br>Using <br>Technology</h1>
         </div>
         <!-- Tag Line Ends -->
