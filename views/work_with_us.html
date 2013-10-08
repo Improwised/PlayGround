@@ -29,9 +29,18 @@
         var demo = document.getElementById("demo");
         var demo2 = document.getElementById("demo2");
         var test = document.getElementById("test");
-        demo.className = "animated bounceIn";
+        demo.className = "animated pulse";
         demo2.className = "animated slideInRight";
         test.className = "animated slideInLeft";
+
+        var tag1 = document.getElementById("tag1");
+        var tag2 = document.getElementById("tag2");
+        var tag3 = document.getElementById("tag3");
+
+        tag1.className = "animated rotateInDownLeft";
+        tag2.className = "animated rotateInDownRight";
+        tag3.className = "animated bounceInUp";
+        
       }
     </script>
   </head>
@@ -67,8 +76,13 @@
       <!-- Tage Line -->
       <div class="row" id="demo">
         <div class="col-xs-12 text-center tagline">
-          <h1> <strong>T</strong>ogether <strong>E</strong>veryone <strong>A</strong>chieves <strong>M</strong>ore</h1>
-          C'mon, Join us ..!
+          <h1>
+            <label id="tag1"><strong>T</strong>ogether <strong>
+              <strong>E</strong>veryone</label>
+            <label id="tag2"><strong>A</strong>chieves
+              <strong>M</strong>ore</label>
+          </h1>
+          <label id="tag3" style="font-weight:lighter">C'mon, Join us ..!</label>
         </div>
       </div>
       <!-- Tag Line Ends -->
