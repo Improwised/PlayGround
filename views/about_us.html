@@ -24,17 +24,16 @@
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
-
     <script type="text/javascript">
       window.onload = function()
       {
-        var demo = document.getElementById("demo");
-        var demo2 = document.getElementById("demo2");
-        var logo = document.getElementById("logo");
-        demo.className = "animated bounceIn";
-        demo2.className = "animated slideInRight";
-        logo.className = "animated slideInLeft"
-
+        // var logo = document.getElementById("logo");
+        // var demo = document.getElementById("demo");
+        // var demo2 = document.getElementById("demo2");
+        // var tag = document.getElementById("tag");
+        // logo.className = "animated slideInLeft";
+        // demo.className = "animated fadeInDownBig";
+        // demo2.className = "animated slideInRight";
 
         var tag1 = document.getElementById("tag1");
         var tag2 = document.getElementById("tag2");
@@ -50,51 +49,78 @@
     </script>
   </head>
 
-	<body style="background-color:#009192">
+	<body>
+  <div class="container">
+
+      <!-- Navigation Header -->
+      <header>
         <div class="row">
-          <div class="col-lg-1">
+          <!--company-logo-->
+          <div class="col-lg-4">
+            <a href="../index.html"><img src="../assets/img/logo.png" id="logo" ></a>
           </div>
-          <div class="col-lg-10">
-            <h1 class="text" title="About Us">About Us</h1>
-          </div>
-          <div class="col-lg-1">
-          </div>
-<<<<<<< HEAD
-=======
           <!--company-logo-->
           <nav class="pull-right">
             <ul style="margin-top:70px;" id="demo2">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="team.html">Team Mates</a></li>
-              <li><a href="work_with_us.html">Work with us</a></li>
-              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="views/team.html">Team Mates</a></li>
+              <li><a href="views/work_with_us.html">Work with us</a></li>
+              <li><a href="views/about_us.html">About Us</a></li>
             </ul>
           </nav>
         </div>
       </header>
       <!-- Navigation Header Ends -->
 
+   
+
+      <!-- Tag Line -->
       <div class="row">
+          <div class="col-xs-12 text-center tagline">
+        <h1>
+          <label id="tag1"> Programming </label>
+          <label id="tag2">is</label>
+          <label id="tag3">an Art </label>
+          <label id="tag4">form that fights back</label>
+        </h1>
+      </div>
+      </div>
+      <!-- Tag Line Ends -->
+
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text" title="About Us">About Us</h1>
+        </div>
+      </div>
+      
+      
+      
+      <div class="row" style="margin-bottom: 300px;">
+        <div class="col-lg-12">
+          <p class="text1" title="Business Automation, Software Development, Web Development, Open-source Consulting, Mobile App Development, Technology Consulting">
+            Business Automation, Software Development, Web Development, Open-source Consulting, Mobile App Development, Technology Consulting
+          </p>
+        </div>
       </div>
 
-      <!-- Tage Line -->
-      <div class="row" id="demo">
-        <div class="col-xs-12 text-center tagline">
-          <h1>
-            <label id="tag1"> Programming</label><label id="tag2">&nbsp;is</label><br>
-            <strong><label id="tag3">an Art</label></strong> </br>
-            <label id="tag4"> form that fights back</label>
-          </h1>
->>>>>>> 4de60d1f4d6f307780cc6171b7e2f07c1df4f9f3
+        <!-- Footer -->
+      <div class="row">
+         <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <span>
+            Contact Us: <a href="mailto:contact@improwised.com" style="text-decoration: none;color: #333333">contact@improwised.com</a>
+          </span>
         </div>
-        <div class="row">
-            <div class="col-lg-1">
-          </div>
-          <div class="col-lg-10">
-            <h1 class="text1" title="Business Automation, Software Development, Web Development, Open-source Consulting, Mobile App Development, Technology Consulting">Business Automation, Software Development, Web Development, Open-source Consulting, Mobile App Development, Technology Consulting</h1>
-          </div>
-          <div class="col-lg-1">
-          </div>
+
+        <div class="col-lg-6 pull-right">
+          <p>All Rights Reserved &copy; 2013. Improwised Technologies Pvt. Ltd.</p>
         </div>
-	</body>
+
+      </div>
+    
+        <!-- Footer --> 
+      </div> <!-- row completed -->
+    </div>
+  </body>
 </html>
