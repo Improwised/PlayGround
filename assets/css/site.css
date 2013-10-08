@@ -57,7 +57,7 @@ nav ul li a:hover
     text-decoration: none;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
-    transition:0.5s;
+    transition:0.3s;
 }
 
 .contact{
@@ -75,6 +75,7 @@ nav ul li a:hover
   font-size:4em;
   box-shadow: 3px 3px 9px #DDD;
   border-radius: 7px;
+  margin-top:-15px
 }
 
 /*map css*/
