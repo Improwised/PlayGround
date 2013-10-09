@@ -34,28 +34,30 @@ body{
 }
 
 
-
+/* Menu / nav bar. */
 nav ul {
     padding: 0 15px;
     font: 19px Helvetica, Verdana, Tahoma;
     list-style: none;
     display: inline-table;
-    border-bottom-color: white;
+
 }
 
 nav ul li {
     float: left;
 }
 nav ul li a {
+    text-decoration: underline;
     display: block; padding: 20px 25px;
 }
+
 nav ul li a:hover
 {
-    background: #87B354;
+    background: #74B64A;
     color:white;
     text-decoration: none;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     transition:0.3s;
 }
 
@@ -66,7 +68,7 @@ nav ul li a:hover
 .tagline{
   color:#fff;
   margin-top:-15px;
-  background-color:#00AFDA;
+  background-color:#74B64A;
   padding-top:2%;
   padding-bottom:2%;
   font-family:sans-serif serif;
@@ -75,6 +77,20 @@ nav ul li a:hover
   box-shadow: 3px 3px 9px #DDD;
   border-radius: 7px;
 }
+
+/* Tagline for only about us page. */
+/*.tagline1{
+  color:#fff;
+  margin-top:-15px;
+  background-color:#74B64A;
+  padding-top:2%;
+  padding-bottom:2%;
+  font-family:sans-serif serif;
+  line-height:1.5em;
+  font-size:4em;
+  border-radius: 7px;
+  margin-top:-15px
+}*/
 
 .tagline1{
   color:#fff;
@@ -88,6 +104,7 @@ nav ul li a:hover
   border-radius: 7px;
   margin-top:-15px
 }
+
 
 /*map css*/
 #map_canvas {
@@ -311,11 +328,10 @@ nav ul li a:hover
 
 
 /* custom About Us*/
-
 .text1 {
   font-size:1.6em;
   font-weight:bold;
-  color:#ebebeb;
+  color:white;
   position:relative;
   padding-top: 50px;
   text-shadow: -1.5px -1.5px 2px #3a3a3a;
@@ -335,11 +351,10 @@ nav ul li a:hover
     opacity:.12;
 }
 .text1:after {
-    top: 2px;
-    left: 2px;
+    top: 1px;
+    left: 1px;
     opacity:.12;
 }
-
 
 
 .foot{
