@@ -35,7 +35,7 @@ body{
 
 
 /* Menu / nav bar. */
-nav ul {
+ul{
     padding: 0 15px;
     font: 19px Helvetica, Verdana, Tahoma;
     list-style: none;
@@ -43,15 +43,17 @@ nav ul {
 
 }
 
-nav ul li {
+#demo2 li {
     float: left;
+    text-decoration: none;
 }
-nav ul li a {
+
+#demo2 li a {
     text-decoration: underline;
     display: block; padding: 20px 25px;
 }
 
-nav ul li a:hover
+#demo2 a:hover
 {
     background: #74B64A;
     color:white;
@@ -59,6 +61,11 @@ nav ul li a:hover
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     transition:0.3s;
+}
+
+#navextra ul{
+
+  display: block;
 }
 
 .contact{
@@ -76,7 +83,7 @@ line-height:1.5em;border-radius: 7px;}
 
 .tagline2{
   font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333;margin-top:-10px;background-color:#74B64A;padding-top:2%;padding-bottom:2%;
-line-height:1.5em;box-shadow: 3px 3px 9px #DDD;border-radius: 7px;}
+line-height:1.5em;border-radius: 7px;}
 
 
 /*map css*/
