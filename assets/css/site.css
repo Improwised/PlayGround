@@ -74,7 +74,7 @@ ul{
 
 .tagline{
   font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333;margin-top:-15px;background-color:#74B64A;padding-top:2%;padding-bottom:2%;
-line-height:1.5em;box-shadow: 3px 3px 9px #DDD;border-radius: 7px;}
+line-height:1.5em;border-radius: 7px;}
 
 /* Tagline for only about us page. */
 .tagline1{
