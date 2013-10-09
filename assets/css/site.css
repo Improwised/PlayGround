@@ -120,6 +120,23 @@ line-height:1.5em;border-radius: 7px;}
     text-shadow: #000 3px 3px 5px;
 }
 
+#content{
+    margin-bottom: 20px;
+}
+.leftBar {
+    background-color: #79b022;
+    width: 25%;
+    height: 5px;
+    float: left;
+}
+.rightBar {
+    background-color: #4cacdf;
+    right: 0;
+    width: 75%;
+    height: 5px;
+    float: right;
+}
+
 <!--  extra try -->
 .ca-menu{
     padding:0;
