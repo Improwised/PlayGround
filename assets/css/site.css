@@ -3,9 +3,9 @@
 * Improwised Technologies Pvt. Ltd.
 */
 body{
-  background:url(../img/bg.png) no-repeat;
+  /*background:url(../img/bg.png) no-repeat;
   background-position:90% 90%;
-  width:100%;
+  width:100%;*/
   font-family:sans-serif;
 }
 
@@ -66,13 +66,25 @@ nav ul li a:hover
 .tagline{
   color:#fff;
   margin-top:-15px;
-  background-color:rgb(135,179,84);
+  background-color:#00AFDA;
   padding-top:2%;
   padding-bottom:2%;
   font-family:sans-serif serif;
   line-height:1.5em;
   font-size:4em;
   box-shadow: 3px 3px 9px #DDD;
+  border-radius: 7px;
+}
+
+.tagline1{
+  color:#fff;
+  margin-top:-15px;
+  background-color:#74B64A;
+  padding-top:2%;
+  padding-bottom:2%;
+  font-family:sans-serif serif;
+  line-height:1.5em;
+  font-size:4em;
   border-radius: 7px;
   margin-top:-15px
 }
@@ -271,9 +283,9 @@ nav ul li a:hover
 /* custom About Us*/
 
 .text {
-  font-size:4em;
+  font-size:4.2em;
   font-weight:bold;
-  color:#000000;
+  color:#ffffff;
   position:relative;
   
   padding-top: 50px;
@@ -301,9 +313,9 @@ nav ul li a:hover
 /* custom About Us*/
 
 .text1 {
-  font-size:2em;
+  font-size:1.6em;
   font-weight:bold;
-  color:#000000;
+  color:#ebebeb;
   position:relative;
   padding-top: 50px;
   text-shadow: -1.5px -1.5px 2px #3a3a3a;
@@ -328,6 +340,25 @@ nav ul li a:hover
     opacity:.12;
 }
 
-#bk{
-background: #009192;
+
+
+.foot{
+
+text-decoration: none;
+color:#a9a9a9;
+letter-spacing: 0.5px;
+word-spacing: 2px;
+
+span
+{a
+{
+text-decoration: none;
 }
+}
+}
+
+.foot a:hover{
+    color: white;
+}
+
+
