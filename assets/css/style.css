@@ -21,20 +21,32 @@ h2 a:hover { color: #90bcd0; }
 #movieposters { list-style:none; margin:100px 0; height:550px; }
 #movieposters li { display:inline; float:left;
 	-webkit-perspective: 500; -webkit-transform-style: preserve-3d;
-	-webkit-transition-property: perspective; -webkit-transition-duration: 0.5s; }
+	-webkit-transition-property: perspective; -webkit-transition-duration: 0.5s; 
+
+	-moz-perspective: 500; -moz-transform-style: preserve-3d;
+	-moz-transition-property: perspective; -moz-transition-duration: 0.5s;
+}
 #movieposters li:hover { -webkit-perspective: 5000; }
 	
 #movieposters li img { border:10px solid #fcfafa; -webkit-transform: rotateY(30deg);
+	-moz-transform: rotateY(30deg);
 	-moz-box-shadow:0 3px 10px #888; -webkit-box-shadow:0 3px 10px #888;
-	-webkit-transition-property: transform; -webkit-transition-duration: 0.5s; }
-#movieposters li:hover img { -webkit-transform: rotateY(0deg); }
+	-webkit-transition-property: transform; -webkit-transition-duration: 0.5s; 
+	-moz-transition-property: transform; -moz-transition-duration: 0.5s;
+	}
+#movieposters li:hover img { -webkit-transform: rotateY(0deg);-moz-transform: rotateY(0deg); }
 
 .movieinfo { border:10px solid #fcfafa; padding:20px; width:200px; height:180px; background-color:#deddcd; margin:-195px 0 0 55px; position:absolute;
 	-moz-box-shadow:0 20px 40px #888; -webkit-box-shadow:0 20px 40px #888;
 	-webkit-transform: translateZ(30px) rotateY(30deg);
-	-webkit-transition-property: transform, box-shadow, margin; -webkit-transition-duration: 0.5s; }
+	-webkit-transition-property: transform, box-shadow, margin; -webkit-transition-duration: 0.5s;
+
+	-moz-transform: translateZ(30px) rotateY(30deg);
+	-moz-transition-property: transform, box-shadow, margin; -moz-transition-duration: 0.5s;
+	 }
 	
-#movieposters li:hover .movieinfo { -webkit-transform: rotateY(0deg); -webkit-box-shadow:0 5px 10px #888; margin:-175px 0 0 30px; }
+#movieposters li:hover .movieinfo { -webkit-transform: rotateY(0deg); -webkit-box-shadow:0 5px 10px #888; margin:-175px 0 0 30px; 
+-moz-transform: rotateY(0deg); -moz-box-shadow:0 5px 10px #888; margin:-175px 0 0 30px;}
 	
 .movieinfo h3 { color:#7a3f3a; font-variant: small-caps; font-family:Georgia,serif,Times; text-align:center; padding-bottom:15px; }
 .movieinfo p { padding-bottom:15px; }
