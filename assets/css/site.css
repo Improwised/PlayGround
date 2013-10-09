@@ -316,8 +316,8 @@ line-height:1.5em;box-shadow: 3px 3px 9px #DDD;border-radius: 7px;}
 
 /* custom About Us*/
 .text1 {
-  font-size:1.6em;
-  font-weight:bold;
+  font-size:2.0em;
+
   color:white;
   position:relative;
   padding-top: 20px;
@@ -362,5 +362,11 @@ text-decoration: none;
 .foot a:hover{
     color: white;
 }
-
-
+/* Footer */
+.footer
+{
+  border-top: 2px solid #777;
+  margin-top: 38px;
+  margin-bottom: 12px;
+  padding-top: 7px;
+}
