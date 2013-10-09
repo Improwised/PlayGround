@@ -370,3 +370,16 @@ text-decoration: none;
   margin-bottom: 12px;
   padding-top: 7px;
 }
+
+.footer_logo
+{
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.footer_logo img{
+  border-radius: 9px;
+}
+.footer_logo img:hover{
+  border-radius: 0px;
+  transition:0.2s;
+}
