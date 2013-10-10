@@ -54,6 +54,7 @@ h2 a:hover { color: #90bcd0; }
 }
 
 .movieinfo { 
+	cursor: pointer;
 	border:10px solid #fcfafa; 
 	padding:20px;
 	width:250px; height:220px;
