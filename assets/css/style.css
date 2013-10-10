@@ -46,7 +46,7 @@ h2 a:hover { color: #90bcd0; }
 }
 .share{
 	border: none;
-	box-shadow: none; 
+	box-shadow: none;
 }
 #movieposters li:hover img {
 	-webkit-transform: rotateY(0deg);
