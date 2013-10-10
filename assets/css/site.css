@@ -87,11 +87,6 @@ nav ul li a:hover
   font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333;margin-top:-15px;background-color:#74B64A;padding-top:2%;padding-bottom:2%;
 line-height:1.5em;border-radius: 7px;}
 
-/* Tagline for only about us page. */
-.tagline1{
-  font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333;margin-top:-15px;background-color:#74B64A;padding-top:2%;padding-bottom:2%;
-line-height:1.5em;border-radius: 7px;}
-
 .tagline2{
   font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333;margin-top:-10px;background-color:#74B64A;padding-top:2%;padding-bottom:2%;
 line-height:1.5em;border-radius: 7px;}
@@ -319,7 +314,7 @@ line-height:1.5em;border-radius: 7px;}
   
   padding-top: 30px;
   text-shadow: -1.5px -1.5px 2px #3a3a3a;
-  border-bottom: 2px solid #eee;
+
 }
 .text:before, .text:after {
     content: attr(title);
@@ -389,13 +384,6 @@ text-decoration: none;
 color:#a9a9a9;
 letter-spacing: 0.5px;
 word-spacing: 2px;
-
-span
-{a
-{
-text-decoration: none;
-}
-}
 }
 
 .foot a:hover{
