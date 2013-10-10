@@ -1,4 +1,4 @@
-/*
+
 * site.css : Custom Stylesheet
 * Improwised Technologies Pvt. Ltd.
 */
@@ -394,7 +394,7 @@ word-spacing: 2px;
 {
   font-size: 1.3em;
 }
-.footer_logo img{
+.footer_logo img{ 
   cursor: pointer;
   transition:0.1s;
   border-radius: 9px;
@@ -404,3 +404,39 @@ word-spacing: 2px;
   border-radius: 0px;
   transition:0.15s;
 }
+
+/* Our Services */
+
+.boxService
+{
+  border:2px solid #777;
+  height: 360px;
+  width: 60px;
+  float : left;
+  display: block;
+  cursor: pointer;
+  margin-left: 1px;
+}
+
+.box_rotate {
+  -moz-transform: rotate(-90deg);
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 160px;
+  -webkit-transform: rotate(-90deg);
+  font-size: 1.2em;
+}
+
+.boxService img{
+  width: 280px;
+  height: 160px;
+}
+
+/* Recent Prijects */
+.clear { clear: both; }
+#vertical { margin:50px auto; width:920px; cursor: pointer;}
+#vertical div.element { margin-right:3px; margin-top:5px; width:296px; height:130px; border:1px solid #999; position:relative; overflow:hidden; }
+.wrap {  height: 260px; width: 296px; position: absolute; top: 0; }
+.init {  height: 130px; width:296px; background: #00AFDA; }
+.init img{ width: 250px; height:100px;margin: 20px;}
+.short { height: 130px; width:296px; background: #74B64A; }
