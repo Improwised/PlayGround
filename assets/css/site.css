@@ -35,7 +35,7 @@ body{
 
 
 /* Menu / nav bar. */
-ul{
+nav ul{
     padding: 0 15px;
     font: 19px Helvetica, Verdana, Tahoma;
     list-style: none;
@@ -43,17 +43,17 @@ ul{
 
 }
 
-#demo2 li {
+nav li {
     float: left;
     text-decoration: none;
 }
 
-#demo2 li a {
+nav li a {
     text-decoration: underline;
     display: block; padding: 20px 25px;
 }
 
-#demo2 a:hover
+nav ul li a:hover
 {
     background: #74B64A;
     color:white;
@@ -61,6 +61,17 @@ ul{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     transition:0.3s;
+}
+
+.active
+{
+  background: #74B64A;
+  color:white;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 #navextra ul{
@@ -74,7 +85,7 @@ ul{
 
 .tagline{
   font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333;margin-top:-15px;background-color:#74B64A;padding-top:2%;padding-bottom:2%;
-line-height:1.5em;box-shadow: 3px 3px 9px #DDD;border-radius: 7px;}
+line-height:1.5em;border-radius: 7px;}
 
 /* Tagline for only about us page. */
 .tagline1{
@@ -128,6 +139,8 @@ line-height:1.5em;border-radius: 7px;}
     width: 25%;
     height: 5px;
     float: left;
+    margin-top: 18px;
+    margin-bottom: 8px;
 }
 .rightBar {
     background-color: #4cacdf;
@@ -135,6 +148,8 @@ line-height:1.5em;border-radius: 7px;}
     width: 75%;
     height: 5px;
     float: right;
+    margin-top: 18px;
+    margin-bottom: 8px;
 }
 
 <!--  extra try -->
@@ -387,10 +402,17 @@ text-decoration: none;
     color: white;
 }
 /* Footer */
-.footer
+.footer_logo
 {
-  border-top: 2px solid #777;
-  margin-top: 38px;
-  margin-bottom: 12px;
-  padding-top: 7px;
+  font-size: 1.3em;
+}
+.footer_logo img{
+  cursor: pointer;
+  transition:0.1s;
+  border-radius: 9px;
+  box-shadow: 0px 10px 5px -2px #3a3a3a;
+}
+.footer_logo img:hover{
+  border-radius: 0px;
+  transition:0.15s;
 }
