@@ -29,18 +29,19 @@
         var demo = document.getElementById("demo");
         var demo2 = document.getElementById("demo2");
         var test = document.getElementById("test");
-        demo.className = "animated pulse";
+        demo.className = "animated fadeIn";
         demo2.className = "animated slideInRight";
         test.className = "animated slideInLeft";
 
         var tag1 = document.getElementById("tag1");
         var tag2 = document.getElementById("tag2");
         var tag3 = document.getElementById("tag3");
+        var tag4 = document.getElementById("tag4");
 
-        tag1.className = "animated rotateInDownLeft";
-        tag2.className = "animated rotateInDownRight";
-        tag3.className = "animated bounceInUp";
-        
+        tag1.className = "animated fadeInLeftBig";
+        tag2.className = "animated fadeInRightBig";
+        tag3.className = "animated slideInDown";
+        tag4.className = "animated fadeInUpBig";
       }
     </script>
   </head>
@@ -58,7 +59,7 @@
               <a href="../index.html"><img src="../assets/img/logo.png" id="test"></a>
             </div> <!--company-logo-->
           </div>
-          <nav class="pull-right">
+          <nav class="pull-right" style="margin-right:-5px;">
             <ul style="margin-top:70px;" id="demo2">
               <li><a href="../index.html">Home</a></li>
               <li><a href="team.html">Team Mates</a></li>
@@ -77,37 +78,34 @@
       <div class="row" id="demo">
         <div class="col-xs-12 text-center tagline">
           <h1>
-            <label id="tag1"><strong>T</strong>ogether <strong>
-              <strong>E</strong>veryone</label>
-            <label id="tag2"><strong>A</strong>chieves
-              <strong>M</strong>ore</label>
+            <label id="tag1"><strong>T</strong>ogether <strong>E</strong>veryone </label><label id="tag2"><strong>&nbsp;A</strong>chieves <strong>M</strong>ore.</label>
           </h1>
-          <label id="tag3" style="font-weight:lighter">C'mon, Join us ..!</label>
         </div>
       </div>
       <!-- Tag Line Ends -->
       
-      <!-- Container -->
+      <!-- Content -->
       <div class="row">
         <div class="col-lg-12 col-xs-6 col-ms-4">
           <hr>
           <div class="content" style="margin-left:20px;">
-            <h2 class="workTitle">Work with Us</h2>
-            <p class="workDesc">Due to the nature of our work, we constantly encounter challenging problems. So naturally, we value problem solving ability in our team members more than anything 
+            <h2>Work with Us</h2>
+            <p>Due to the nature of our work, we constantly encounter challenging problems. So naturally, we value problem solving ability in our team members more than anything 
               else.</p>
-            <p class="workDesc">If you think you are a good problem solver and will enjoy working in a challenging environment, take a stab at our exercise. It won't take more than a few minutes
+            <p>If you think you are a good problem solver and will enjoy working in a challenging environment, take a stab at our exercise. It won't take more than a few minutes
               of your time. We're always happy to know other good programmers, so please feel free to attempt it even if you're not looking for a job.</p><br>
             <a href="http://www.cull.io/submit/#!/78001-btjbip" target="_blank" class="btn btn-info">Apply Here</a>
           </div>
         </div>
       </div>
-      <!-- Container -->
+      <!-- Content -->
 
       <div class="leftBar"></div>
       <div class="rightBar"></div>
 
       <!-- Footer -->
-      <footer style="font-weight:lighter">
+      <footer>
+        <nav>
           <div class="col-lg-5">
             <p><a href="#">Blog</a> -
             <a href="#">Archive</a> -
@@ -122,8 +120,9 @@
           </p>
           </div>
           <div class="col-lg-3">
-            <p class="pull-right">Contact Us: <a href="mailto:contact@improwised.com">contact@improwised.com</a></p>
+            <span class="pull-right">Contact Us: <a href="mailto:contact@improwised.com">contact@improwised.com</a></span>
           </div>
+        </nav>
       </footer>
       <!-- Footer Ends -->
     </div>
