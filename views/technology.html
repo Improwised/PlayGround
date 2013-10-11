@@ -36,14 +36,19 @@
       function zoomIn(id)
       {
         var test = document.getElementById(id);
-        test.style.width = "300px";
-        test.style.transition = "0.4s";
+        test.style.width = "500px";
+        test.style.transition = "0.8s";
         var ptag = document.getElementById("p_"+id);
         ptag.style.transform = "rotate(0deg)";
-        ptag.style.transition = "0.4s";
+        ptag.style.transition = "0.8s";
         ptag.style.marginTop = "0px";
-        var img = document.getElementById("i_"+id);
-        img.style.display = "block";
+        
+        // var img = document.getElementById("i_"+id);
+        // img.style.display = "block";
+
+        var desc = document.getElementById("d_"+id);
+        desc.style.display = "block";
+        desc.className = "animated fadeIn descService";
 
 
       }
@@ -54,9 +59,11 @@
         var ptag = document.getElementById("p_"+id);
         ptag.style.transform = "rotate(-90deg)";
         ptag.style.marginTop = "160px";        
-        ptag.style.transition = "0.4s";
-        var img = document.getElementById("i_"+id);
-        img.style.display = "none";
+        ptag.style.transition = "0.8s";
+        
+        var desc = document.getElementById("d_"+id);
+        desc.style.display = "none";
+        desc.className = "descService";
       }
 
 
@@ -125,19 +132,42 @@
           <div class="col-lg-8">
             <h2>Our Services</h2>
             <div class="boxService" id="one" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
-              <p class="box_rotate" id="p_one" >Web Services
+              <p class="box_rotate" id="p_one" >Web Developement
               </p>
-              <img src="../assets/img/logo.png" id="i_one" style="display:none;">
+              <p id="d_one" class="descService">
+                <img src="../assets/img/logo.png"><br>
+                The Thumbnail Slider (or jQuery Slider if using the jQuery version) allows you to easily animate any series of elements, by sequentially scrolling them.
+                The content can be anything: HTML, text, images, ...
+              </p>
+              <!-- <img src="../assets/img/logo.png" id="i_one" style="display:none;"> -->
             </div>
             <div class="boxService" id="two" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
-              <p class="box_rotate" id="p_two">Web Technology</p>
-              <img src="../assets/img/2.png" id="i_two" style="display:none;">
+              <p class="box_rotate" id="p_two">Web Designing</p>
+              <p id="d_two" class="descService">
+                <img src="../assets/img/laravel.png"><br>
+                The Thumbnail Slider allows you to organize, highlight and showcase your most important content in a sleek and stylish manner while at the same time allowing your audience to browse the content all within the same page.
+              </p>
             </div>
             <div class="boxService" id="three" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
-              <p class="box_rotate" id="p_three">Mobile Technology</p>
+              <p class="box_rotate" id="p_three">Mobile&nbsp;App Developement</p>
+              <p id="d_three" class="descService">
+                <img src="http://www.bravr.com/wp-content/uploads/131404860.jpg"><br>
+                The options in the script allows you to easily cutomize the slider to your web design. No muss, no fuss.
+
+                direction
+                scroll interval
+                scroll duration
+                hover pause
+                auto advance
+                scroll by each thumb
+              </p>
             </div>
             <div class="boxService" id="four" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)" >
-              <p class="box_rotate" id="p_four">Logo(animation)</p>
+              <p class="box_rotate" id="p_four">Logo&nbsp;Design (animation)</p>
+                <p id="d_four" class="descService">
+                  <img src="http://www.lakmus.ru/design/logos5.jpg"><br>
+                  A logo is a graphic mark or emblem commonly used by commercial enterprises, organizations and even individuals to aid and promote instant public recognition. Logos are either purely graphic (symbols/icons) or are composed of the name of the organization (a logotype or wordmark).
+                </p>
             </div>
           </div>
 
