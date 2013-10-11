@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Improwised Technologies: Pushing Technology Forward</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="Description" content="We help our customers make the most out of their business with technology.">
+    <meta name="Keywords" content="improwised technologies, business automation, technology consulting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Animate CSS -->
+    <link href="../assets/css/animate.min.css" rel="stylesheet" type="text/css" ></link>
+    <!-- Bootstrap -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- Site CSS -->
+    <link href="../assets/css/site.css" rel="stylesheet" type="text/css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      window.onload = function()
+      {
+        var demo = document.getElementById("demo");
+        var demo2 = document.getElementById("demo2");
+        var test = document.getElementById("test");
+        demo.className = "animated bounceIn";
+        demo2.className = "animated slideInRight";
+        test.className = "animated slideInLeft";
+      }
+      function zoomIn(id)
+      {
+        var test = document.getElementById(id);
+        test.style.width = "300px";
+        test.style.transition = "0.4s";
+        var ptag = document.getElementById("p_"+id);
+        ptag.style.transform = "rotate(0deg)";
+        ptag.style.transition = "0.4s";
+        ptag.style.marginTop = "0px";
+        var img = document.getElementById("i_"+id);
+        img.style.display = "block";
+
+
+      }
+      function zoomOut(id)
+      {
+        var outwidth = document.getElementById(id);
+        outwidth.style.width = "60px";
+        var ptag = document.getElementById("p_"+id);
+        ptag.style.transform = "rotate(-90deg)";
+        ptag.style.marginTop = "160px";        
+        ptag.style.transition = "0.4s";
+        var img = document.getElementById("i_"+id);
+        img.style.display = "none";
+      }
+
+
+      $(function(){
+        $("#vertical div.wrap").hover(function(){
+            $(this).stop().animate({top:"-130px"},{queue:false,duration:200});
+        }, function() {
+            $(this).stop().animate({top:"0px"},{queue:false,duration:200});
+        });
+      });
+
+
+    </script>
+
+    <style type="text/css">
+
+    </style>
+
+
+
+
+  </head>
+
+  <body>
+    <!-- Container starts -->
+    <div class="container">
+
+      <!-- Navigation Header -->
+      <header>
+        <div class="row">
+          <!--company-logo-->
+          <div class="col-lg-4">
+            <a href="../index.html"><img src="../assets/img/logo.png" id="logo"></a>
+          </div>
+          <!--company-logo-->
+          <nav class="pull-right">
+            <ul style="margin-top:70px;" id="demo2">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="team.html">Team Mates</a></li>
+              <li><a href="work_with_us.html">Work with us</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- Navigation Header Ends -->
+
+      <div class="row">
+      </div>
+
+      <!-- Tage Line -->
+      <div class="row" id="demo">
+        <div class="col-xs-12 text-center tagline">
+          <h1> Programming is <br> <strong>an Art</strong> </br> form that fights back</h1>
+        </div>
+      </div>
+      <!-- Tag Line Ends -->
+      
+      <!-- Container -->
+      <div class="row">
+        <div class="col-lg-12 col-xs-6 col-ms-4">
+          <div class="content" style="margin-left:20px;">
+            <hr>
+
+<!-- Our services -->
+          <div class="col-lg-8">
+            <h2>Our Services</h2>
+            <div class="boxService" id="one" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+              <p class="box_rotate" id="p_one" >Web Services
+              </p>
+              <img src="../assets/img/logo.png" id="i_one" style="display:none;">
+            </div>
+            <div class="boxService" id="two" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+              <p class="box_rotate" id="p_two">Web Technology</p>
+              <img src="../assets/img/2.png" id="i_two" style="display:none;">
+            </div>
+            <div class="boxService" id="three" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+              <p class="box_rotate" id="p_three">Mobile Technology</p>
+            </div>
+            <div class="boxService" id="four" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)" >
+              <p class="box_rotate" id="p_four">Logo(animation)</p>
+            </div>
+          </div>
+
+<!-- Recent Projects -->
+          <div class="col-lg-4">
+            <h2>Recent Projects</h2>
+            <div id="vertical" class="clear">
+              <div class="element">
+                  <div class="wrap">
+                      <div class="init">
+                        <img src="https://faddle.mobi/images/logo.png" />
+                      </div>
+                      <div class="short">Faddle</div>
+                  </div>
+              </div>
+              <div class="element">
+                  <div class="wrap">
+                      <div class="init">
+                        <img src="http://courseloads.improwised.com/img/logo.png" />
+                      </div>
+                      <div class="short">Course Loads</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <!-- Container -->
+
+      <div class="leftBar"></div>
+      <div class="rightBar"></div>
+
+      <!-- Footer -->
+      <footer>
+        <nav>
+          <div class="col-lg-5">
+            <p><a href="#">Blog</a> -
+            <a href="#">Archive</a> -
+            <a href="../index.html">Home</a>
+            <p>All Rights Reserved &copy; 2013. Improwised Technologies Pvt. Ltd.</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="footer_logo" onmouserover="changelogo()">Socialize with Us:
+            <img src="../assets/img/logo_fb.png">
+            <img src="../assets/img/logo_gp.png">
+            <img src="../assets/img/logo_twt.png">
+          </p>
+          </div>
+          <div class="col-lg-3">
+            <span class="pull-right">Contact Us: <a href="mailto:contact@improwised.com">contact@improwised.com</a></span>
+          </div>
+        </nav>
+      </footer>
+      <!-- Footer Ends -->
+    </div>
+    <!-- container -->
+  </body>
+</html>
