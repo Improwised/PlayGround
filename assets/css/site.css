@@ -35,12 +35,14 @@ nav ul{
   padding: 0 15px;
   font: 19px Helvetica, Verdana, Tahoma;
   list-style: none;
-  display: inline-table;
+  /*display: inline-table;*/
 
 }
-
-nav li {
+nav #demo2 li{
   float: left;
+  text-decoration: none;
+}
+nav li {
   text-decoration: none;
 }
 
