@@ -424,6 +424,7 @@ word-spacing: 2px;
   -moz-transform: rotate(-90deg);
   text-align: center;
   margin-top: 170px;
+  -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   font-size: 1.3em;
   font-weight: bold;
@@ -448,7 +449,7 @@ word-spacing: 2px;
 
 /* Recent Prijects */
 .clear { clear: both; }
-#vertical { margin:50px auto; width:920px; cursor: pointer;}
+#vertical { margin:50px auto; cursor: pointer;}
 #vertical div.element { margin-right:3px; margin-top:5px; width:296px; height:130px; border:1px solid #999; position:relative; overflow:hidden; }
 .wrap {  height: 260px; width: 296px; position: absolute; top: 0; }
 .init {  height: 130px; width:296px; background: #00AFDA; }

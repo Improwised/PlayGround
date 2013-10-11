@@ -6,7 +6,6 @@
     <meta name="Description" content="We help our customers make the most out of their business with technology.">
     <meta name="Keywords" content="improwised technologies, business automation, technology consulting">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Animate CSS -->
     <link href="../assets/css/animate.min.css" rel="stylesheet" type="text/css" ></link>
     <!-- Bootstrap -->
@@ -26,46 +25,43 @@
     <script type="text/javascript">
       window.onload = function()
       {
-        var demo = document.getElementById("demo");
-        var demo2 = document.getElementById("demo2");
-        var test = document.getElementById("test");
-        demo.className = "animated bounceIn";
-        demo2.className = "animated slideInRight";
-        test.className = "animated slideInLeft";
+        var logo = document.getElementById("logo");
+        var menu = document.getElementById("demo2");
+        var tag = document.getElementById("tag");
+        
+        tag.className = "animated bounceIn";
+        logo.className = "animated slideInLeft";
+        menu.className = "animated slideInRight";
+        
       }
       function zoomIn(id)
       {
-        var test = document.getElementById(id);
-        test.style.width = "500px";
-        test.style.transition = "0.8s";
-        var ptag = document.getElementById("p_"+id);
-        ptag.style.transform = "rotate(0deg)";
-        ptag.style.transition = "0.8s";
-        ptag.style.marginTop = "0px";
-        
-        // var img = document.getElementById("i_"+id);
-        // img.style.display = "block";
-
+        var mainDiv = document.getElementById(id);
+        var heading = document.getElementById("h_"+id);
         var desc = document.getElementById("d_"+id);
+        
+        mainDiv.style.width = "500px";
+        mainDiv.style.transition = "0.8s";
+        heading.style.transform = "rotate(0deg)";
+        heading.style.webkitTransform = "rotate(0deg)";
+        heading.style.transition = "0.8s";
+        heading.style.marginTop = "0px";
         desc.style.display = "block";
         desc.className = "animated fadeIn descService";
-
-
       }
       function zoomOut(id)
       {
+        var heading = document.getElementById("h_"+id);
+        var desc = document.getElementById("d_"+id);
         var outwidth = document.getElementById(id);
         outwidth.style.width = "60px";
-        var ptag = document.getElementById("p_"+id);
-        ptag.style.transform = "rotate(-90deg)";
-        ptag.style.marginTop = "160px";        
-        ptag.style.transition = "0.8s";
-        
-        var desc = document.getElementById("d_"+id);
+        heading.style.transform = "rotate(-90deg)";
+        heading.style.webkitTransform = "rotate(-90deg)";
+        heading.style.marginTop = "160px";        
+        heading.style.transition = "0.8s";
         desc.style.display = "none";
         desc.className = "descService";
       }
-
 
       $(function(){
         $("#vertical div.wrap").hover(function(){
@@ -75,22 +71,12 @@
         });
       });
 
-
     </script>
-
-    <style type="text/css">
-
-    </style>
-
-
-
-
   </head>
 
   <body>
     <!-- Container starts -->
     <div class="container">
-
       <!-- Navigation Header -->
       <header>
         <div class="row">
@@ -100,7 +86,7 @@
           </div>
           <!--company-logo-->
           <nav class="pull-right">
-            <ul style="margin-top:70px;" id="demo2">
+            <ul style="margin-top:70px;" id="menu">
               <li><a href="../index.html">Home</a></li>
               <li><a href="team.html">Team Mates</a></li>
               <li><a href="work_with_us.html">Work with us</a></li>
@@ -110,12 +96,10 @@
         </div>
       </header>
       <!-- Navigation Header Ends -->
-
       <div class="row">
       </div>
-
       <!-- Tage Line -->
-      <div class="row" id="demo">
+      <div class="row" id="tag">
         <div class="col-xs-12 text-center tagline">
           <h1> Programming is <br> <strong>an Art</strong> </br> form that fights back</h1>
         </div>
@@ -126,83 +110,187 @@
       <div class="row">
         <div class="col-lg-12 col-xs-6 col-ms-4">
           <div class="content" style="margin-left:20px;">
-            <hr>
+          <hr>
 
-<!-- Our services -->
-          <div class="col-lg-8">
-            <h2>Our Services</h2>
-            <div class="boxService" id="one" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
-              <p class="box_rotate" id="p_one" >Web Developement
-              </p>
-              <p id="d_one" class="descService">
-                <img src="../assets/img/logo.png"><br>
-                The Thumbnail Slider (or jQuery Slider if using the jQuery version) allows you to easily animate any series of elements, by sequentially scrolling them.
-                The content can be anything: HTML, text, images, ...
-              </p>
-              <!-- <img src="../assets/img/logo.png" id="i_one" style="display:none;"> -->
-            </div>
-            <div class="boxService" id="two" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
-              <p class="box_rotate" id="p_two">Web Designing</p>
-              <p id="d_two" class="descService">
-                <img src="../assets/img/laravel.png"><br>
-                The Thumbnail Slider allows you to organize, highlight and showcase your most important content in a sleek and stylish manner while at the same time allowing your audience to browse the content all within the same page.
-              </p>
-            </div>
-            <div class="boxService" id="three" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
-              <p class="box_rotate" id="p_three">Mobile&nbsp;App Developement</p>
-              <p id="d_three" class="descService">
-                <img src="http://www.bravr.com/wp-content/uploads/131404860.jpg"><br>
-                The options in the script allows you to easily cutomize the slider to your web design. No muss, no fuss.
-
-                direction
-                scroll interval
-                scroll duration
-                hover pause
-                auto advance
-                scroll by each thumb
-              </p>
-            </div>
-            <div class="boxService" id="four" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)" >
-              <p class="box_rotate" id="p_four">Logo&nbsp;Design (animation)</p>
+          <!-- Desktop Container -->
+          <div class="row visible-lg">
+            <!-- Our services -->
+            <div class="col-lg-8">
+              <h2>Our Services</h2>
+              <div class="boxService" id="one" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+                <p class="box_rotate" id="h_one">Web Developement</p>
+                <p id="d_one" class="descService">
+                  <img src="../assets/img/logo.png"><br>
+                  The Thumbnail Slider (or jQuery Slider if using the jQuery version) allows you to easily animate any series of elements, by sequentially scrolling them.
+                  The content can be anything: HTML, text, images, ...
+                </p>
+                <!-- <img src="../assets/img/logo.png" id="i_one" style="display:none;"> -->
+              </div>
+              <div class="boxService" id="two" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+                <p class="box_rotate" id="h_two">Web Designing</p>
+                <p id="d_two" class="descService">
+                  <img src="../assets/img/laravel.png"><br>
+                  The Thumbnail Slider allows you to organize, highlight and showcase your most important content in a sleek and stylish manner while at the same time allowing your audience to browse the content all within the same page.
+                </p>
+              </div>
+              <div class="boxService" id="three" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+                <p class="box_rotate" id="h_three">Mobile&nbsp;App Developement</p>
+                <p id="d_three" class="descService">
+                  <img src="http://www.bravr.com/wp-content/uploads/131404860.jpg"><br>
+                    The options in the script allows you to easily cutomize the slider to your web design. No muss, no fuss.
+                    direction<br>
+                    scroll interval<br>
+                    scroll duration<br>
+                    hover pause<br>
+                    auto advance
+                    scroll by each thumb
+                </p>
+              </div>
+              <div class="boxService" id="four" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)" >
+                <p class="box_rotate" id="h_four">Logo&nbsp;Design</p>
                 <p id="d_four" class="descService">
                   <img src="http://www.lakmus.ru/design/logos5.jpg"><br>
                   A logo is a graphic mark or emblem commonly used by commercial enterprises, organizations and even individuals to aid and promote instant public recognition. Logos are either purely graphic (symbols/icons) or are composed of the name of the organization (a logotype or wordmark).
                 </p>
+              </div>
+            </div>
+
+            <!-- Recent Projects -->
+            <div class="col-lg-4">
+              <h2>Recent Projects</h2>
+              <div id="vertical" class="clear">
+                <div class="element">
+                  <div class="wrap">
+                    <div class="init">
+                      <img src="https://faddle.mobi/images/logo.png" />
+                    </div>
+                    <div class="short">Faddle</div>
+                  </div>
+                </div>
+                <div class="element">
+                  <div class="wrap">
+                    <div class="init">
+                      <img src="http://courseloads.improwised.com/img/logo.png" />
+                    </div>
+                    <div class="short">Course Loads</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./content -->
+        </div>
+        <!-- ./col -->
+      </div>
+    <!-- ./row -->
+    </div>
+
+
+
+    <!-- Mobile visible container -->
+    <div class="row visible-xs visible-sm visible-md">
+      <div class="col-xs-12">
+        <div class="panel-group" id="accordion">
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  Web Developement
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <img src="../assets/img/logo.png" class="img-responsive"><br>
+                The Thumbnail Slider (or jQuery Slider if using the jQuery version) allows you to easily animate any series of elements, by sequentially scrolling them.
+                The content can be anything: HTML, text, images, ...
+              </div>
             </div>
           </div>
 
-<!-- Recent Projects -->
-          <div class="col-lg-4">
-            <h2>Recent Projects</h2>
-            <div id="vertical" class="clear">
-              <div class="element">
-                  <div class="wrap">
-                      <div class="init">
-                        <img src="https://faddle.mobi/images/logo.png" />
-                      </div>
-                      <div class="short">Faddle</div>
-                  </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  Web Designing
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <img src="../assets/img/laravel.png" class="img-responsive"><br>
+                The Thumbnail Slider allows you to organize, highlight and showcase your most important content in a sleek and stylish manner while at the same time allowing your audience to browse the content all within the same page.
               </div>
-              <div class="element">
-                  <div class="wrap">
-                      <div class="init">
-                        <img src="http://courseloads.improwised.com/img/logo.png" />
-                      </div>
-                      <div class="short">Course Loads</div>
-                  </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  Mobile App Developement
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <img src="http://www.bravr.com/wp-content/uploads/131404860.jpg" class="img-responsive"><br>
+                The options in the script allows you to easily cutomize the slider to your web design. No muss, no fuss. direction scroll interval scroll duration hover pause auto advance scroll by each thumb.
               </div>
             </div>
           </div>
 
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                  Logo Design
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">
+                <img src="http://www.lakmus.ru/design/logos5.jpg" class="img-responsive"><br>
+                A logo is a graphic mark or emblem commonly used by commercial enterprises, organizations and even individuals to aid and promote instant public recognition. Logos are either purely graphic (symbols/icons) or are composed of the name of the organization (a logotype or wordmark).
+              </div>
+            </div>
+          </div>
 
+          <!-- ./panel -->
+        </div>
+        <!-- ./col -->
+      </div>
 
+      <!-- Recent Projects mobile visible -->
+      <div class="col-lg-4 visible-sm visible-xs visible-md">
+        <h2>Recent Projects</h2>
+        <div id="vertical" class="clear">
+          <div class="element">
+              <div class="wrap">
+                  <div class="init">
+                    <img src="https://faddle.mobi/images/logo.png" />
+                  </div>
+                  <div class="short">Faddle</div>
+              </div>
+          </div>
+          <div class="element">
+              <div class="wrap">
+                  <div class="init">
+                    <img src="http://courseloads.improwised.com/img/logo.png" />
+                  </div>
+                  <div class="short">Course Loads</div>
+              </div>
           </div>
         </div>
       </div>
-      <!-- Container -->
+      <!-- ./row -->
+    </div>
 
-      <div class="leftBar"></div>
-      <div class="rightBar"></div>
+      <!-- Footer HR -->
+
+    <div class="leftBar"></div>
+    <div class="rightBar"></div>
 
       <!-- Footer -->
       <footer>
