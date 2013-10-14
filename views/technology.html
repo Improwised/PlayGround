@@ -27,9 +27,9 @@
       {
         var logo = document.getElementById("logo");
         var menu = document.getElementById("demo2");
-        var tag = document.getElementById("tag");
+        var demo = document.getElementById("demo");
         
-        tag.className = "animated bounceIn";
+        demo.className = "animated bounceIn";
         logo.className = "animated slideInLeft";
         menu.className = "animated slideInRight";
         
@@ -162,8 +162,8 @@
           <!-- Desktop Container -->
           <div class="row visible-lg">
             <!-- Our services -->
-            <div class="col-lg-8">
-              <h2>Our Services</h2>
+            <div class="col-lg-8" style="overflow:hidden">
+              <h2 class="main_title">Our Services</h2>
               <div class="boxService" id="one" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
                 <p class="box_rotate" id="h_one">Web Developement</p>
                 <p id="d_one" class="descService">
@@ -209,7 +209,7 @@
 
             <!-- Recent Projects -->
             <div class="col-lg-4">
-              <h2>Recent Projects</h2>
+              <h2 class="main_title">Recent Projects</h2>
               <div id="vertical" class="clear">
                 <div class="element">
                   <div class="wrap">
