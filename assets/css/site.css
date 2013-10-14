@@ -356,6 +356,17 @@ nav ul li a:hover
   opacity:.12;
 }
 
+/* Main description */
+.main_desc
+{
+  font-size: 18px;
+}
+.main_title
+{
+  font-size: 30px;
+  text-shadow: 0 2px 6px #AAA;
+  font-weight: bolder;
+}
 
 .foot{
   text-decoration: none;
@@ -415,8 +426,7 @@ nav ul li a:hover
 .descService
 {
   display: none;
-  font-size: 1.2em;
-  margin: 8px;
+  margin: 5px;
 }
 
 .descService img

@@ -124,58 +124,45 @@
       <div class="row">
       </div>
 
-      <!-- Tag Line -->
+
+      <!-- Tage Line -->
       <div class="row" id="demo">
-        <div class="col-xs-12 text-center tagline">
-          <h1>
-            <h1> The distance between <br> heaven and earth <br> is no greater than one thought. </h1>
-          </h1>
+        <div class="col-xs-12 text-center tagline visible-lg visible-md visible-sm">
+          <h1> The distance between <br> heaven and earth <br> is no greater than one thought. </h1>
+        </div>
+          <div class="col-xs-12 tagline visible-xs">
+          <h1> The distance between <br> heaven and earth <br> is no greater than one thought. </h1>
         </div>
       </div>
       <!-- Tag Line Ends -->
       <hr/>
       <!-- Container -->
         <div class="row">
-          <!-- Desktop Visible -->
-          <div class="row visible-lg">
-            <div class="col-lg-12">
-              <div class="col-lg-6" style="margin-top:25px">
-                <div id="map_canvas"></div>
-              </div>
-              <div class="col-lg-4 contact">
-                <h3>Reach Us!</h3>
-                <strong style="border-bottom:2px solid #DDD;padding:0 0 5px">Improwised Technologies Private Limited</strong>
-                <br><br>
-                <p>211 - Amrut Comm. Complex,</p>
-                <p>Above Pujara Telecom,</p>
-                <p>Sardarnagar Main Road,</p>
-                <p>Rajkot - 360001.</p>
-                <span class="glyphicon glyphicon-send" style="font-size:1.2em"></span>
-                <a href="mailto:contact@improwised.com" style="font-size:1.2em">Email Us</a>
-              </div>
-            </div>
+          <!-- contact information -->
+          <div class="col-lg-1 col-md-1 visible-lg visible-md"></div><!-- extra column -->
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 contact">
+            <h3>Reach Us!</h3>
+            <strong style="border-bottom:2px solid #DDD;padding:0 0 5px">Improwised Technologies Private Limited</strong>
+            <br><br>
+            <p>211 - Amrut Comm. Complex,</p>
+            <p>Above Pujara Telecom,</p>
+            <p>Sardarnagar Main Road,</p>
+            <p>Rajkot - 360001.</p>
+            <span class="glyphicon glyphicon-send" style="font-size:1.2em"></span>
+            <a href="mailto:contact@improwised.com" style="font-size:1.2em">Email Us</a>
           </div>
-          <!-- Desktop Visible Ends-->
-        </div>
-
-        <!-- Mobile/Tablet Visible -->
-        <div class="row visible-xs visible-sm visible-md">
-          <div class="col-xs-12">
-            <div class="col-xs-6" style="margin-top:25px;">
-             <img width="320px" height="400px" src="http://maps.google.com/maps/api/staticmap?center=22.292149,70.789227&zoom=19&size=600x400&maptype=hybrid&sensor=false&language=en&mobile=true" alt="Map">
-            </div>
-            <div class="col-xs-4 contact">
-              <h3>Reach Us!</h3>
-              <strong style="border-bottom:2px solid #DDD;padding:0 0 5px">Improwised Technologies Private Limited</strong>
-              <br><br>
-              <p>211 - Amrut Comm. Complex,</p>
-              <p>Above Pujara Telecom,</p>
-              <p>Sardarnagar Main Road,</p>
-              <p>Rajkot - 360001.</p>
-              <span class="glyphicon glyphicon-send" style="font-size:1.2em"></span>
-              <a href="mailto:contact@improwised.com" style="font-size:1.2em">Email Us</a>
-            </div>
+          <!-- contact information complete -->
+          
+          <!-- map -->
+          <div class="col-lg-6 col-md-5 col-sm-12 visible-lg visible-sm visible-md" style="margin-top:25px"><div id="map_canvas"></div></div>
+          <div class="col-md-1 visible-md"></div>
+          <div class="col-xs-12 visible-xs" style="margin-top:25px;">
+            <hr>
+            <h4><strong>Click Here !!</strong></h4>
+            <!--  <a href="http://maps.google.com/maps/api/staticmap?center=22.292026648694872, 70.78884959220886&zoom=19&size=400x400&maptype=hybrid&sensor=false"><img width="320px" height="400px" src="http://maps.google.com/maps/api/staticmap?center=22.292149,70.789227&zoom=19&size=600x400&maptype=hybrid&sensor=false&language=en&mobile=true" alt="Map"></a> -->
+             <a href="http://maps.google.com/maps/api/staticmap?center=22.292026648694872, 70.78884959220886&zoom=19&size=400x400&maptype=hybrid&sensor=false"><img width="320px" height="400px" src="../assets/img/staticmap.png" alt="Map"></a>
           </div>
+          <!-- map complete -->
         </div>
       <!-- Container -->
 
@@ -185,21 +172,24 @@
       <!-- Footer -->
       <footer>
         <nav>
-          <div class="col-lg-5">
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
             <p><a href="#">Blog</a> -
             <a href="#">Archive</a> -
-            <a href="../index.html">Home</a>
+            <a href="/index.html">Home</a>
             <p>All Rights Reserved &copy; 2013. Improwised Technologies Pvt. Ltd.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <p class="footer_logo" onmouserover="changelogo()">Socialize with Us:
             <img src="../assets/img/logo_fb.png">
             <img src="../assets/img/logo_gp.png">
             <img src="../assets/img/logo_twt.png">
-          </p>
+            </p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3 visible-lg visible-md">
             <span class="pull-right">Contact Us: <a href="mailto:contact@improwised.com">contact@improwised.com</a></span>
+          </div>
+           <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+            <span class="">Contact Us: <a href="mailto:contact@improwised.com">contact@improwised.com</a></span>
           </div>
         </nav>
       </footer>
