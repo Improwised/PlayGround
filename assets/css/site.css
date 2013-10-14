@@ -33,6 +33,7 @@ body{
 /* Menu / nav bar. */
 nav ul{
   padding: 0 15px;
+  margin-top: 75px;
   font: 19px Helvetica, Verdana, Tahoma;
   list-style: none;
   /*display: inline-table;*/
@@ -48,7 +49,8 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  display: block; padding: 20px 25px;
+  display: block; 
+  padding: 20px 25px;
 }
 
 nav ul li a:hover
@@ -77,6 +79,16 @@ nav ul li a:hover
   border-top-right-radius: 12px;
 }
 
+.aboutActive
+{
+  background: #74B64A;
+  color:white;
+  margin-left: 5px;
+  text-decoration: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
 #navextra ul{
 
   display: block;
@@ -86,16 +98,25 @@ nav ul li a:hover
   margin-top:30px;
 }
 
+/*.tagline{
+  font: bold 60px Helvetica, Arial, Sans-serif; 
+  text-align: center; color: #eee; 
+  text-shadow: 0px 2px 6px #333;margin-top:-10px;
+  background-color:#74B64A; 
+  
+  border-radius: 7px;
+}
+*/
 .tagline{
-  font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333;margin-top:-15px;background-color:#74B64A;padding-top:2%;padding-bottom:2%;
-  line-height:1.5em;border-radius: 7px;
+  text-shadow: 0px 2px 6px #333;
+  color: #eee;
+  border-radius: 7px;
+  font: 50px Helvetica, Arial, Sans-serif; 
+  background-color:#74B64A;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: -5px;
 }
-
-.tagline2{
-  font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333;margin-top:-10px;background-color:#74B64A;padding-top:2%;padding-bottom:2%;
-  line-height:1.5em;border-radius: 7px;
-}
-
 
 /*map css*/
 #map_canvas {
@@ -335,6 +356,17 @@ nav ul li a:hover
   opacity:.12;
 }
 
+/* Main description */
+.main_desc
+{
+  font-size: 18px;
+}
+.main_title
+{
+  font-size: 30px;
+  text-shadow: 0 2px 6px #AAA;
+  font-weight: bolder;
+}
 
 .foot{
   text-decoration: none;
