@@ -152,6 +152,10 @@ nav ul li a:hover
   text-shadow: #000 3px 3px 5px;
 }
 
+#arrow{
+  background-color: #ffe;
+}
+
 #content{
   margin-bottom: 20px;
 }
