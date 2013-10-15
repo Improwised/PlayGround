@@ -6,7 +6,6 @@
     <meta name="Description" content="We help our customers make the most out of their business with technology.">
     <meta name="Keywords" content="improwised technologies, business automation, technology consulting">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Animate CSS -->
     <link href="../assets/css/animate.min.css" rel="stylesheet" type="text/css" ></link>
     <!-- Bootstrap -->
@@ -25,43 +24,47 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <link href="../assets/css/slider.css" rel="stylesheet" type="text/css" />
-    <script src="../assets/js/jquery-1.7.1.min.js" type="text/javascript"></script>
-    <script src="../assets/js/jquery-slider.js" type="text/javascript"></script>
-
     <script type="text/javascript">
       window.onload = function()
       {
+        var logo = document.getElementById("logo");
+        var menu = document.getElementById("demo2");
         var demo = document.getElementById("demo");
-        var demo2 = document.getElementById("demo2");
-        var test = document.getElementById("test");
+        
         demo.className = "animated bounceIn";
-        demo2.className = "animated slideInRight";
-        test.className = "animated slideInLeft";
+        logo.className = "animated slideInLeft";
+        menu.className = "animated slideInRight";
+        
       }
       function zoomIn(id)
       {
-        var test = document.getElementById(id);
-        test.style.width = "300px";
-        test.style.transition = "0.4s";
-        var ptag = document.getElementById("p_"+id);
-        ptag.style.transform = "rotate(0deg)";
-        ptag.style.transition = "0.4s";
-        ptag.style.marginTop = "0px";
-        var img = document.getElementById("i_"+id);
-        img.style.display = "block";
+        var mainDiv = document.getElementById(id);
+        var heading = document.getElementById("h_"+id);
+        var desc = document.getElementById("d_"+id);
+        
+        mainDiv.style.width = "500px";
+        mainDiv.style.transition = "0.8s";
+        heading.style.transform = "rotate(0deg)";
+        heading.style.webkitTransform = "rotate(0deg)";
+        heading.style.transition = "0.8s";
+        heading.style.marginTop = "0px";
+        desc.style.display = "block";
+        desc.className = "animated fadeIn descService";
       }
       function zoomOut(id)
       {
+        var heading = document.getElementById("h_"+id);
+        var desc = document.getElementById("d_"+id);
         var outwidth = document.getElementById(id);
         outwidth.style.width = "60px";
-        var ptag = document.getElementById("p_"+id);
-        ptag.style.transform = "rotate(-90deg)";
-        ptag.style.marginTop = "160px";        
-        ptag.style.transition = "0.4s";
-        var img = document.getElementById("i_"+id);
-        img.style.display = "none";
+        heading.style.transform = "rotate(-90deg)";
+        heading.style.webkitTransform = "rotate(-90deg)";
+        heading.style.marginTop = "160px";        
+        heading.style.transition = "0.8s";
+        desc.style.display = "none";
+        desc.className = "descService";
       }
+
       $(function(){
         $("#vertical div.wrap").hover(function(){
             $(this).stop().animate({top:"-130px"},{queue:false,duration:200});
@@ -69,6 +72,7 @@
             $(this).stop().animate({top:"0px"},{queue:false,duration:200});
         });
       });
+
     </script>
   </head>
 
@@ -87,22 +91,65 @@
             <a href="../index.html"><img src="../assets/img/logo.png" class="img-responsive"></a>
           </div>
           <!--company-logo-->
-          <nav class="pull-right">
-            <ul style="margin-top:70px;" id="demo2">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="team.html">Team Mates</a></li>
-              <li><a href="work_with_us.html">Work with us</a></li>
-              <li><a href="about_us.html">About Us</a></li>
-            </ul>
-          </nav>
+          <!-- Large Screen -->
+          <div class="pull-right visible-lg">
+            <nav>
+              <ul id="demo2">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="team.html">Team Mates</a></li>
+                <li><a href="work_with_us.html">Work with us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Large Screen -->
+
+          <!-- Mobile/Tablet Screen -->
+          <div class="pull-right visible-md">
+            <nav>
+              <ul style="margin-top:70px;" id="demo2">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="team.html">Team Mates</a></li>
+                <li><a href="work_with_us.html">Work with us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Mobile/Tablet Screen-->
         </div>
+
       </header>
       <!-- Navigation Header Ends -->
+      <div class="row visible-xs visible-sm" id="navextra">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse" >
+              <ul class="nav navbar-nav" style="font-size: 16px">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="team.html">Team Mates</a></li>
+                <li><a href="work_with_us.html">Work with us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
 
       <div class="row">
       </div>
 
-      <!-- Tage Line -->
+      <!-- Tag Line -->
       <div class="row" id="demo">
         <div class="col-xs-12 text-center tagline">
           <h1> Programming is <br> <strong>an Art</strong> </br> form that fights back</h1>
@@ -113,61 +160,200 @@
       <!-- Container -->
       <div class="row">
         <div class="col-lg-12 col-xs-6 col-ms-4">
-          <div class="content" style="margin-left:20px;">
-            <hr>
+          <div class="content">
+          <hr>
 
-            <h2>Our Services</h2>
-            <div id="mcts1">
-              <div class="each">
-                <img src="../assets/img/laravel.png" />
-                <div class="content">
-                  <p><strong>Web Developement</strong></p>
-                  <p>The Thumbnail Slider (or jQuery Slider if using the jQuery version) allows you to easily animate any series of elements, by sequentially scrolling them.</p>
-                  <p>The content can be anything: HTML, text, images, ...</p>
-                </div>
+          <!-- Desktop Container -->
+          <div class="row visible-lg">
+            <!-- Our services -->
+            <div class="col-lg-8" style="overflow:hidden">
+              <h2 class="main_title">Our Services</h2>
+              <div class="boxService" id="one" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+                <p class="box_rotate" id="h_one">Web Developement</p>
+                <p id="d_one" class="descService">
+                  <img src="../assets/img/web_develop.jpeg"><br>
+                  We develope the simplest static single page of plain text to the most complex web-based internet applications, 
+                  electronic businesses, and social network services that suits your business. We take regular feedback from our client and deliver solutions on time.
+                </p>
+                <!-- <img src="../assets/img/logo.png" id="i_one" style="display:none;"> -->
               </div>
-              <div class="each">
-                <img src="../assets/img/laravel.png" />
-                <div class="content">
-                  <p><strong>Web Designing</strong></p>
-                  <p>The Thumbnail Slider allows you to organize, highlight and showcase your most important content in a sleek and stylish manner while
-                      at the same time allowing your audience to browse the content all within the same page.</p>
-                </div>
+              <div class="boxService" id="two" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+                <p class="box_rotate" id="h_two">Web Designing</p>
+                <p id="d_two" class="descService">
+                  <img src="../assets/img/web_design.jpeg"><br>
+                  We bulid website as per your choice. We offer web-page design, interface design and graphics design. The designer team at our company interacts with you and 
+                  devlivers you first the working Layout. And on approval of the layout further content is added in ready layout.
+                </p>
               </div>
-              <div class="each">
-                <img src="../assets/img/laravel.png" />
-                <div class="content">
-                  <p><strong>Mobile Application Developement</strong></p>
-                  <p>The options in the script allows you to easily cutomize the slider to your web design. No muss, no fuss.</p>
+              <div class="boxService" id="three" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)">
+                <p class="box_rotate" id="h_three">Mobile&nbsp;App Developement</p>
+                <p id="d_three" class="descService">
+                <img src="../assets/img/mobile_development.jpg"><br>
+                  Both businesses and consumers demand innovative‚ out-of-the-box mobile applications that provide sophisticated user experiences and ease of use.
+                  We provide our clients simple to dynamic mobile applications. They expect feature-rich solutions that help their business to simplify, added to that the 
+                  diversity of devices and cross-platform synchronization. <br/>Our mobile app development process includes not only the design and development of greater apps, but 
+                  also a consultative front-end, and a back-end of maintenance and support.
+                </p>
+              </div>
+              <div class="boxService" id="four" onmouseover="zoomIn(this.id)" onmouseout="zoomOut(this.id)" >
+                <p class="box_rotate" id="h_four">Logo&nbsp;Design</p>
+                <div id="d_four" class="descService">
+                  <img src="../assets/img/logo_design.jpeg"/><br>
+                  In today's highly competitive marketplace, having a great logo design is a key way for establishing yourself as a unique brand. Therefore, effective logo 
+                  designs should be powerful and eye-catching without being too complex.
                   <ul>
-                      <li>direction</li>
-                      <li>scroll interval</li>
-                      <li>scroll duration</li>
-                      <li>hover pause</li>
-                      <li>auto advance</li>
-                      <li>scroll by each thumb</li>
-                      <li>circular</li>
-                      <li>large image slider</li>
-                      <li>inSync with large image slider</li>
+                    <li>Customized Logos and Designs</li>
+                    <li>Company Logos</li>
+                    <li>Business Cards</li>
                   </ul>
                 </div>
               </div>
-              <div class="each">
-                <img src="../assets/img/laravel.png" />
-                <div class="content">
-                  <p><strong>Web Designing</strong></p>
-                  <p>The Thumbnail Slider allows you to organize, highlight and showcase your most important content in a sleek and stylish manner while
-                      at the same time allowing your audience to browse the content all within the same page.</p>
+            </div>
+
+            <!-- Recent Projects -->
+            <div class="col-lg-4">
+              <h2 class="main_title">Recent Projects</h2>
+              <div id="vertical" class="clear">
+                <div class="element">
+                  <div class="wrap">
+                    <div class="init">
+                      <img src="https://faddle.mobi/images/logo.png" />
+                    </div>
+                    <div class="short">Faddle</div>
+                  </div>
+                </div>
+                <div class="element">
+                  <div class="wrap">
+                    <div class="init">
+                      <img src="http://courseloads.improwised.com/img/logo.png" />
+                    </div>
+                    <div class="short">Course Loads</div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <!-- ./content -->
+        </div>
+        <!-- ./col -->
+      </div>
+    <!-- ./row -->
+    </div>
 
+    <!-- Mobile visible container -->
+    <div class="row visible-xs visible-sm visible-md">
+      <div class="col-xs-12">
+        <div class="panel-group" id="accordion">
+          
+          <div class="panel panel-default" style="border:2px solid #00AFDA;">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  Web Developement
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <img src="../assets/img/web_develop.jpeg" class="img-responsive"><br>
+                We develope the simplest static single page of plain text to the most complex web-based internet applications, 
+                electronic businesses, and social network services that suits your business. We take regular feedback from our client and deliver solutions on time.
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" style="border:2px solid #00AFDA;">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  Web Designing
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <img src="../assets/img/web_design.jpeg"><br>
+                  We bulid website as per your choice. We offer web-page design, interface design and graphics design. The designer team at our company interacts with you and 
+                  devlivers you first the working Layout. And on approval of the layout further content is added in ready layout.
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default" style="border:2px solid #00AFDA;">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  Mobile App Developement
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <img src="../assets/img/mobile_development.jpg"><br>
+                Both businesses and consumers demand innovative‚ out-of-the-box mobile applications that provide sophisticated user experiences and ease of use.
+                We provide our clients simple to dynamic mobile applications. They expect feature-rich solutions that help their business to simplify, added to that the 
+                diversity of devices and cross-platform synchronization. Our mobile app development process includes not only the design and development of greater apps, but 
+                also a consultative front-end, and a back-end of maintenance and support.
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" style="border:2px solid #00AFDA;">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                  Logo Design
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">
+                <img src="../assets/img/logo_design.jpeg" class="img-responsive"><br>
+                 In today's highly competitive marketplace, having a great logo design is a key way for establishing yourself as a unique brand. Therefore, effective logo 
+                  designs should be powerful and eye-catching without being too complex.
+                  <ul>
+                    <li>Customized Logos and Designs</li>
+                    <li>Company Logos</li>
+                    <li>Business Cards</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ./panel -->
+        </div>
+        <!-- ./col -->
+      </div>
+
+      <!-- Recent Projects mobile visible -->
+      <div class="col-lg-4 visible-sm visible-xs visible-md">
+        <h2>Recent Projects</h2>
+        <div id="vertical" class="clear">
+          <div class="element">
+              <div class="wrap">
+                  <div class="init">
+                    <img src="https://faddle.mobi/images/logo.png" />
+                  </div>
+                  <div class="short">Faddle</div>
+              </div>
+          </div>
+          <div class="element">
+              <div class="wrap">
+                  <div class="init">
+                    <img src="http://courseloads.improwised.com/img/logo.png" />
+                  </div>
+                  <div class="short">Course Loads</div>
+              </div>
           </div>
         </div>
       </div>
-      <!-- Container -->
+      <!-- ./row -->
+    </div>
 
-      <div class="leftBar"></div>
-      <div class="rightBar"></div>
+    <!-- Footer HR -->
+
+    <div class="leftBar"></div>
+    <div class="rightBar"></div>
 
       <!-- Footer -->
       <footer>

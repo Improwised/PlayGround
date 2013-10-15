@@ -36,7 +36,6 @@ nav ul{
   margin-top: 75px;
   font: 19px Helvetica, Verdana, Tahoma;
   list-style: none;
-  /*display: inline-table;*/
 
 }
 nav #demo2 li{
@@ -62,11 +61,6 @@ nav ul li a:hover
   border-top-right-radius: 12px;
   transition:0.3s;
 }
-
-/*.menu{
-  -webkit-margin-top: -175px;
-  margin-right: -179px;
-}*/
 
 .active
 {
@@ -98,15 +92,6 @@ nav ul li a:hover
   margin-top:30px;
 }
 
-/*.tagline{
-  font: bold 60px Helvetica, Arial, Sans-serif; 
-  text-align: center; color: #eee; 
-  text-shadow: 0px 2px 6px #333;margin-top:-10px;
-  background-color:#74B64A; 
-  
-  border-radius: 7px;
-}
-*/
 .tagline{
   text-shadow: 0px 2px 6px #333;
   color: #eee;
@@ -118,7 +103,7 @@ nav ul li a:hover
   margin-top: -5px;
 }
 
-/*map css*/
+/*MAP CSS*/
 #map_canvas {
   width: 500px;
   height: 400px;
@@ -159,29 +144,11 @@ nav ul li a:hover
 #content{
   margin-bottom: 20px;
 }
-.leftBar {
-  background-color: #79b022;
-  width: 25%;
-  height: 5px;
-  float: left;
-  margin-top: 18px;
-  margin-bottom: 8px;
-}
-.rightBar {
-  background-color: #4cacdf;
-  right: 0;
-  width: 75%;
-  height: 5px;
-  float: right;
-  margin-top: 18px;
-  margin-bottom: 8px;
-}
 
-<!--  extra try -->
+/*Home page Animated Menus*/
 .ca-menu{
   padding:0;
   margin:20px auto;
-  width: 1020px;
 }
 .ca-menu li{
   width: 200px;
@@ -332,33 +299,7 @@ nav ul li a:hover
         -ms-transform: translateY(0%);
     }
 }
-.text1 {
-  font-size:2.0em;
-
-  color:#222;
-  position:relative;
-  padding-top: 20px;
-  text-shadow: -1.5px -1.5px 2px #3a3a3a;
-  letter-spacing:2px;
-}
-.text1:before, .text1:after {
-  content: attr(title);
-  color: rgba(255,255,255,1);
-  position: absolute;
-  padding-top: 20px;
-  letter-spacing:2px;
-}
-
-.text1:before {
-  top: 1px;
-  left: 1px;
-  opacity:.12;
-}
-.text1:after {
-  top: 1px;
-  left: 1px;
-  opacity:.12;
-}
+/*Home page animated menus ends*/
 
 /* Main description */
 .main_desc
@@ -371,17 +312,28 @@ nav ul li a:hover
   text-shadow: 0 1px 3px #AAA;
   font-weight: bolder;
 }
+/*Main description ends*/
 
-.foot{
-  text-decoration: none;
-  color:#a9a9a9;
-  letter-spacing: 0.5px;
-  word-spacing: 2px;
+/*Footer Bar*/
+.leftBar {
+  background-color: #79b022;
+  width: 25%;
+  height: 5px;
+  float: left;
+  margin-top: 18px;
+  margin-bottom: 8px;
 }
+.rightBar {
+  background-color: #4cacdf;
+  right: 0;
+  width: 75%;
+  height: 5px;
+  float: right;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+/*Footer Bar Ends*/
 
-.foot a:hover{
-  color: white;
-}
 /* Footer */
 .footer_logo
 {
@@ -397,9 +349,9 @@ nav ul li a:hover
   border-radius: 0px;
   transition:0.15s;
 }
+/*Footer Ends*/
 
 /* Our Services */
-
 .boxService
 {
   border:2px solid #00AFDA;
@@ -437,8 +389,9 @@ nav ul li a:hover
 {
   margin-left: 15%;
 }
+/*Services Ends*/
 
-/* Recent Prijects */
+/* Recent Projects */
 .clear { clear: both; }
 #vertical { margin:50px auto; cursor: pointer;}
 #vertical div.element { margin-right:3px; margin-top:5px; width:296px; height:130px; border:1px solid #999; position:relative; overflow:hidden; }
