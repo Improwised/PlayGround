@@ -30,12 +30,8 @@
       window.onload = function()
       {
         if(Modernizr.csstransitions || Modernizr.csstransforms || Modernizr.csstransforms3d || Modernizr.cssanimations) {
-          var logo = document.getElementById("logo");
-          var demo2 = document.getElementById("demo2");
           var tag = document.getElementById("tag");
-          logo.className = "animated slideInLeft";
-          demo2.className = "animated slideInRight";
-          tag.className = "animated bounceInDown";
+          tag.className = "";
         }
 
         var tag1 = document.getElementById("tag1");
