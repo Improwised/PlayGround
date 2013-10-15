@@ -148,7 +148,9 @@ nav ul li a:hover
 /*Home page Animated Menus*/
 .ca-menu{
   padding:0;
-  margin:20px auto;
+  /*margin:20px auto;*/
+  margin-top: 2%;
+  margin-left: 5%;
 }
 .ca-menu li{
   width: 200px;

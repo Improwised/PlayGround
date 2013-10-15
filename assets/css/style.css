@@ -117,11 +117,10 @@ ul{margin:0;padding:0;}
 	margin: 10px;
 	border-radius:15px;
 	-webkit-border-radius:15px;
-	color:#ffe;
+	color:gray;
 	margin-bottom: -10px;
 }
 .frame a:hover .fb, .frame a:focus .fb{
-	/*background-color:#6a191f; */
 	color:#305A94;
 }
 .frame a:hover .git , .frame a:focus .git{
