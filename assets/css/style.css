@@ -87,8 +87,9 @@ ul{margin:0;padding:0;}
 }
 
 #cull a{
-	margin-left:30px;
+	margin-left:36px;
 	padding:0;
+	padding-bottom: 15px;
     display: inline-block;
     font-weight: bold;
     color: #efefef;;
