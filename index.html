@@ -32,7 +32,17 @@
         var tag = document.getElementById("tag");
         logo.className = "animated slideInLeft";
         demo2.className = "animated slideInRight";
-        tag.className = "animated bounceInDown";
+        tag.className = "animated fadeIn";
+
+        var tag1 = document.getElementById("tag1");
+        var tag2 = document.getElementById("tag2");
+        var tag3 = document.getElementById("tag3");
+        var tag4 = document.getElementById("tag4");
+
+        tag1.className = "animated fadeInLeftBig";
+        tag2.className = "animated fadeInRightBig";
+        tag3.className = "animated slideInDown";
+        tag4.className = "animated fadeInUpBig";
       }
     </script>
   </head>
@@ -106,7 +116,10 @@
       <div class="row" id="tag">
         <div class="col-xs-12 text-center tagline">
           <h1>
-            <label>We Automate The Business <br>Using <br>Technology</label>
+            <label id="tag1">We Automate </label>
+            <label id="tag2">The Business </label>
+            <br><label id="tag3">Using </label>
+            <br><label id="tag4"> Technology</label>
           </h1>
         </div>
       </div>
