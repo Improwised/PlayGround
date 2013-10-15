@@ -59,6 +59,13 @@ h2 a:hover { color: #90bcd0; }
 	-moz-transform: translateZ(30px) rotateY(30deg);
 	-moz-transition-property: transform, box-shadow, margin; -moz-transition-duration: 0.5s;
 }
+
+ul{margin:0;padding:0;}
+
+.frame p, .frame h3{
+	margin:0;
+	padding:0;
+}
 	
 #poster li:hover .frame {
 	-webkit-transform: rotateY(0deg);
@@ -74,10 +81,33 @@ h2 a:hover { color: #90bcd0; }
 .frame p { padding-bottom:15px; }
 
 #cull{
-	color: green;
-	text-decoration: underline;
-	font-size: 1.5em;
+	border:2px solid;
+	border-radius:50px;
+	background-color: #303030;
 }
+
+#cull a{
+	margin-left:36px;
+	padding:0;
+	padding-bottom: 15px;
+    display: inline-block;
+    font-weight: bold;
+    color: #efefef;;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+#cull a:hover {
+	color:#efefef;
+    -webkit-transform: scale(1.5,1.5);
+    -moz-transform: scale(1.5,1.5);
+    -o-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+}
+
 .frame a {
 	text-decoration:none;
 	display:inline;
@@ -87,11 +117,10 @@ h2 a:hover { color: #90bcd0; }
 	margin: 10px;
 	border-radius:15px;
 	-webkit-border-radius:15px;
-	color:#ffe;
+	color:gray;
 	margin-bottom: -10px;
 }
 .frame a:hover .fb, .frame a:focus .fb{
-	/*background-color:#6a191f; */
 	color:#305A94;
 }
 .frame a:hover .git , .frame a:focus .git{

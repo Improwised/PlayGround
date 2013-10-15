@@ -20,10 +20,10 @@
     <!-- Font Awesome -->
     <link href="../assets/css/font-awesome.css" rel="stylesheet" type="text/css"></link>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
+    <!--[if lt IE 9]><!-->
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond.min.js"></script>
+    <!--<![endif]-->
 
     <script type="text/javascript">
       window.onload = function()
@@ -56,8 +56,11 @@
       <header>
         <div class="row">
           <!--company-logo-->
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <a href="../index.html"><img src="../assets/img/logo.png" id="logo"></a>
+          <div class="col-lg-4 col-md-4 visible-lg visible-md">
+            <a href="../index.html"><img src="../assets/img/logo.png" id="logo" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-12 visible-sm visible-xs">
+            <a href="../index.html"><img src="../assets/img/logo.png" class="img-responsive"></a>
           </div>
           <!--company-logo-->
           <!-- Large Screen -->
@@ -84,10 +87,8 @@
               </ul>
             </nav>
           </div>
-        
           <!-- Mobile/Tablet Screen-->
         </div>
-
       </header>
       <!-- Navigation Header Ends -->
       <div class="row visible-xs visible-sm" id="navextra">
@@ -120,21 +121,12 @@
 
       <!-- Tag Line -->
       <div class="row" id="demo">
-        <div class="col-lg-12 text-center tagline visible-lg visible-md visible-sm">
+        <div class="col-lg-12 text-center tagline">
           <h1>
             <label id="tag1"> There are only 10 types</label>
             <label id="tag2"> of people in the world</label>
             <label id="tag3"> Those who understands Binary </label>
             <label id="tag4"> and those who don’t. </label>
-          </h1>
-        </div>
-
-        <div class="col-xs-12 tagline visible-xs">
-          <h1>
-            There are only 10 types
-            of people in the world
-            Those who understands Binary
-            and those who don’t.
           </h1>
         </div>
       </div>
@@ -160,26 +152,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Mobile/Tablet Visible -->
-        <div class="row visible-xs visible-sm visible-md">
-          <div class="col-xs-12">
-            <h2>About Us</h2>
-            <p>Business Automation, Software Development, Web Development, Open-source Consulting, Mobile App Development, Technology Consulting.</p>
-            <p>Founded in 2011, our company delivers best solutions to clients. Our aim is to automate the business using Technology so you can be top in your Business.
-             We believe customer satisfaction, so clients means a lot to us.
-            </p><br>
-            <p>We provide:</p>
-            <ul>
-              <li>Software Developement</li>
-              <li>Web Developement</li>
-              <li>Open-source Consulting</li>
-              <li>Mobile Application Developement</li>
-              <li>Technology Consulting</li>
-            </ul>
-          </div>
-        </div>
-      <!-- Mobile/Tablet Visible Ends-->
       <!-- Content -->
 
       <div class="leftBar"></div>
@@ -189,8 +161,6 @@
       <footer>
         <nav>
           <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-            <p><a href="#">Blog</a> -
-            <a href="#">Archive</a> -
             <a href="../index.html">Home</a>
             <p>All Rights Reserved &copy; 2013. Improwised Technologies Pvt. Ltd.</p>
           </div>

@@ -20,10 +20,10 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../assets/js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
+    <!--[if lt IE 9]><!-->
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond.min.js"></script>
+    <!--<![endif]-->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript">
       window.onload = function()
@@ -79,8 +79,11 @@
       <header>
         <div class="row">
           <!--company-logo-->
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <a href="../index.html"><img src="../assets/img/logo.png" id="logo"></a>
+          <div class="col-lg-4 col-md-4 visible-lg visible-md">
+            <a href="../index.html"><img src="../assets/img/logo.png" id="logo" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-12 visible-sm visible-xs">
+            <a href="../index.html"><img src="../assets/img/logo.png" class="img-responsive"></a>
           </div>
           <!--company-logo-->
           <!-- Large Screen -->
@@ -151,12 +154,12 @@
       <!-- Tag Line Ends -->
       <hr/>
       <!-- container -->
-        <div class="row">
+        <div class="row" id="content">
           <div class="col-xs-12">
             <div class="content main_desc">
               <h2 class="main_title">Our Team</h2>
-              <p>We have strong expertised team that you would love to join. We make Dreams true by working hard in a Team. Due to the nature of our work, we constantly encounter 
-              challenging problems. So naturally, we value problem solving ability in our team members more than anything else.</p>
+              <p>We have strong expertised team that you would love to join. We make Dreams true by working hard in a Team.</p>
+              <p>Due to the nature of our work, we constantly encounter challenging problems. So naturally, we value problem solving ability in our team members more than anything else.</p>
             </div>
           </div>
         </div>
@@ -261,7 +264,7 @@
         <div class="col-lg-4">
           <ul id="poster">
             <li>
-              <img src="../assets/img/01_iron_man_2.jpg" alt="Iron Man 2" />
+              <img src="../assets/img/SHAILESH-SIR.jpg" alt="Iron Man 2" />
               <div class="frame">
                 <h3>Shailesh&nbsp;Davara</h3>
                 <p>COO, Senior Developer</p>
@@ -285,7 +288,7 @@
           <div class="col-lg-4">
             <ul id="poster">
               <li>
-                <img src="../assets/img/aragorn.jpg" alt="Iron Man 2" width="315px" height="410px;"/>
+                <img src="../assets/img/MIT.jpg" alt="Iron Man 2" width="315px" height="410px;"/>
                 <div class="frame">
                   <h3>Mit&nbsp;Patel</h3>
                   <p>Software Engineer</p>
@@ -309,7 +312,7 @@
           <div class="col-lg-4">
             <ul id="poster">
               <li>
-                <img src="../assets/img/deckard.jpg" alt="Iron Man 2" width="315px" height="410px;"/>
+                <img src="../assets/img/YOGESH.jpg" alt="Iron Man 2" width="315px" height="410px;"/>
                 <div class="frame">
                   <h3>Yogesh&nbsp;Devaliya</h3>
                   <p>Software Engineer</p>
@@ -333,7 +336,7 @@
           <div class="col-lg-4">
             <ul id="poster">
               <li>
-                <img src="../assets/img/buzz.jpg" alt="Iron Man 2" width="315px" height="410px;"/>
+                <img src="../assets/img/TAPAN.jpg" alt="Iron Man 2" width="315px" height="410px;"/>
                 <div class="frame">
                   <h3>Tapan&nbsp;Balavliya</h3>
                   <p>Designer</p>
@@ -364,10 +367,9 @@
                 <img src="../assets/img/new.jpg" alt="Iron Man 2" />
                 <div class="frame">
                   <h3><strong>?&nbsp;?&nbsp;?</strong></h3>
-                  <p>Future Team Member</p>
-                  <p>Wanna be here?
-                  Just solve this simple excercise ..!</p>
-                  <a href="http://www.cull.io/submit/#!/78001-btjbip" target="_blank" id="cull">Apply Here</a>
+                  <p>Your name can be here</p>
+                  <p>Wanna be here? Just solve this simple excercise ..!</p>
+                  <div id="cull"><a href="http://www.cull.io/submit/#!/78001-btjbip" target="_blank">Apply Here</a></div>
                 </div>
               </li>
             </ul>
@@ -383,8 +385,6 @@
       <footer>
         <nav>
           <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-            <p><a href="#">Blog</a> -
-            <a href="#">Archive</a> -
             <a href="../index.html">Home</a>
             <p>All Rights Reserved &copy; 2013. Improwised Technologies Pvt. Ltd.</p>
           </div>
