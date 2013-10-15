@@ -45,6 +45,29 @@
         tag3.className = "animated bounceInDown";
         tag4.className = "animated bounceInUp";
       }
+
+      function fadeIn(id)
+      {
+        var ione = document.getElementById("i_"+id);
+        var pone = document.getElementById("p_"+id);
+        pone.style.display = "inline-block";
+        ione.style.transform = "scale(1.3)";
+        pone.className = "animated fadeInLeft";
+        ione.style.border = "7px solid #CCCCCC";
+        ione.style.transition = "0.3s";
+        ione.style.cursor = "pointer";
+      }
+
+      function fadeOut(id)
+      {
+        var pone = document.getElementById("p_"+id);
+        var ione = document.getElementById("i_"+id);
+
+        ione.style.transform = "scale(1)";
+        pone.className = "animated fadeOutLeft";
+        ione.style.border = "2px solid #DDD";
+        ione.style.transition = "0.3s";
+      }
     </script>
   </head>
 
@@ -137,8 +160,82 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2"></div>  
-        <div class="col-lg-4">
+        <br>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <div class="roundrect">
+              <div id="four" onmouseover="fadeIn(this.id)" onmouseout="fadeOut(this.id)">
+                <img id="i_four" src="../assets/img/01_iron_man_2.jpg"/>
+                <p id="p_four" style="display:none">
+                  <strong>Rakshit&nbsp;Menpara</strong>
+                  Founder, CEO<br>
+                  <label class="member">
+                    <a href="#" title="Facebook">
+                      <i class="icon-facebook-sign icon-2x fb"></i>
+                    </a>
+                    <a href="#" title="GitHub">
+                      <i class="icon-github-sign icon-2x git"></i>
+                    </a>
+                    <a href="https://twitter.com/deltasquare4" title="Twitter">
+                      <i class="icon-twitter-sign icon-2x twitter"></i>
+                    </a>
+                    <a href="#" title="Skype">
+                      <i class="icon-skype icon-2x skype"></i>
+                    </a>
+                  </label>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="roundrect">
+              <div id="five" onmouseover="fadeIn(this.id)" onmouseout="fadeOut(this.id)">
+                <img id="i_five" src="../assets/img/01_iron_man_2.jpg"/>
+                <p id="p_five" style="display:none">Hello... EveryOne !!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <br><br>
+
+          <div class="row">
+            
+            <div class="col-lg-4">
+              <div class="roundrect">
+                <div id="one" onmouseover="fadeIn(this.id)" onmouseout="fadeOut(this.id)">
+                  <img id="i_one" src="../assets/img/aragorn.jpg"/>
+                  <p id="p_one" style="display:none">Hello... EveryOne !!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="roundrect">
+                <div id="two" onmouseover="fadeIn(this.id)" onmouseout="fadeOut(this.id)">
+                  <img id="i_two" src="../assets/img/deckard.jpg"/>
+                  <p id="p_two" style="display:none">Hello... EveryOne !!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="roundrect">
+                <div id="three" onmouseover="fadeIn(this.id)" onmouseout="fadeOut(this.id)">
+                  <img id="i_three" src="../assets/img/buzz.jpg"/>
+                  <p id="p_three" style="display:none">Hello... EveryOne !!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        <!-- <div class="col-lg-2"></div>   -->
+        <!-- <div class="col-lg-4">
           <ul id="poster">
             <li>
               <img src="../assets/img/01_iron_man_2.jpg" alt="Iron Man 2" />
@@ -257,9 +354,9 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <!-- Future Member Div-->
-        <div class="col-lg-4"></div>
+        <!-- <div class="col-lg-4"></div>
         <div class="row">
           <div class="col-lg-4">
             <ul id="poster">
@@ -275,7 +372,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <!-- Future Member Ends-->
       <div>
 

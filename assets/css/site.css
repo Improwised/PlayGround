@@ -452,3 +452,50 @@ nav ul li a:hover
   background: #00AFDA;
   color:white;
 }
+.roundrect
+{
+  /*border: 1px solid #111;*/
+  width: 361px;
+  height: 150px;
+}
+
+.roundrect img
+{
+  height: 130px;
+  width: 130px;
+  border : 2px solid #DDD;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 90px;
+  box-shadow:0 0 8px rgba(0, 0, 0, .8);
+}
+
+.roundrect p
+{
+  border: 7px solid #CCCCCC;
+  background: #EEE;
+  border-left: none;
+  vertical-align: middle;
+  width: 200px;
+  padding-left: 25px;
+  padding-right: 5px;
+  
+}
+
+.member a{
+  color:#DDD;
+}
+
+.member a:hover .fb, .member a:focus .fb{
+  color:#305A94;
+}
+.member a:hover .git , .member a:focus .git{
+  color:black;
+}
+.member a:hover .twitter , .member a:focus .twitter{
+  transition : 0.5s;
+  color:#00a0d1;
+}
+.member a:hover .skype , .member a:focus .skype{
+  color:#00A3FF;
+}
