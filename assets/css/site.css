@@ -421,8 +421,12 @@ nav ul li a:hover
   border : 2px solid #DDD;
   z-index: 1;
   overflow: hidden;
+  -moz-border-radius: 90px;
+  -webkit-border-radius: 90px;
   border-radius: 90px;
   box-shadow:0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow:0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow:0 0 8px rgba(0, 0, 0, .8);
 }
 
 .roundrect p
@@ -439,6 +443,7 @@ nav ul li a:hover
 
 .member a{
   color:#DDD;
+  text-decoration: none;
 }
 
 .member a:hover .fb, .member a:focus .fb{
