@@ -22,16 +22,21 @@
     <link href="assets/css/slider.css" rel="stylesheet" type="text/css" />
     <script src="assets/js/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="assets/js/jquery-slider.js" type="text/javascript"></script>
+
+    <script src="assets/js/modernizr.js" type="text/javascript"></script>
+
     <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css"></link>
     <script type="text/javascript">
       window.onload = function()
       {
-        var logo = document.getElementById("logo");
-        var demo2 = document.getElementById("demo2");
-        var tag = document.getElementById("tag");
-        logo.className = "animated slideInLeft";
-        demo2.className = "animated slideInRight";
-        tag.className = "animated bounceInDown";
+        if(Modernizr.csstransitions || Modernizr.csstransforms || Modernizr.csstransforms3d || Modernizr.cssanimations) {
+          var logo = document.getElementById("logo");
+          var demo2 = document.getElementById("demo2");
+          var tag = document.getElementById("tag");
+          logo.className = "animated slideInLeft";
+          demo2.className = "animated slideInRight";
+          tag.className = "animated bounceInDown";
+        }
       }
     </script>
   </head>
@@ -192,8 +197,6 @@
        <footer>
         <nav>
           <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-            <p><a href="#">Blog</a> -
-            <a href="#">Archive</a> -
             <a href="index.html">Home</a>
             <p>All Rights Reserved &copy; 2013. Improwised Technologies Pvt. Ltd.</p>
           </div>
