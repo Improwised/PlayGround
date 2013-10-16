@@ -26,28 +26,13 @@
     <!--<![endif]-->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript">
-      window.onload = function()
-      {
-        var demo = document.getElementById("demo");
-        demo.className = "";
-
-        var tag1 = document.getElementById("tag1");
-        var tag2 = document.getElementById("tag2");
-        var tag3 = document.getElementById("tag3");
-        var tag4 = document.getElementById("tag4");
-
-        tag1.className = "animated bounceInLeft";
-        tag2.className = "animated bounceInRight";
-        tag3.className = "animated bounceInDown";
-        tag4.className = "animated bounceInUp";
-      }
-
       function fadeIn(id)
       {
         var ione = document.getElementById("i_"+id);
         var pone = document.getElementById("p_"+id);
         pone.style.display = "inline-block";
         ione.style.transform = "scale(1.3)";
+        ione.style.webkitTransform = "scale(1.3)";
         pone.className = "animated fadeInLeft";
         ione.style.border = "7px solid #CCCCCC";
         ione.style.transition = "0.3s";
@@ -60,6 +45,7 @@
         var ione = document.getElementById("i_"+id);
 
         ione.style.transform = "scale(1)";
+        ione.style.webkitTransform = "scale(1)";
         pone.className = "animated fadeOutLeft";
         ione.style.border = "none";
         ione.style.transition = "0.3s";
@@ -87,8 +73,9 @@
             <nav>
               <ul id="demo2">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="team.html" class="active">Team Mates</a></li>
-                <li><a href="work_with_us.html">Work with us</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about_us.html">About Us</a></li>
               </ul>
             </nav>
@@ -100,8 +87,9 @@
             <nav>
               <ul id="demo2">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="team.html" class="active">Team Mates</a></li>
-                <li><a href="work_with_us.html">Work with us</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about_us.html">About Us</a></li>
               </ul>
             </nav>
@@ -126,8 +114,9 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse" >
               <ul class="nav navbar-nav" style="font-size: 16px">
                 <li><a href="../index.html">Home</a></li>
-                <li class="active"><a href="team.html">Team Mates</a></li>
-                <li><a href="work_with_us.html">Work with us</a></li>
+                <li class="active"><a href="team.html">Team</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about_us.html">About Us</a></li>
               </ul>
             </div>
