@@ -25,13 +25,6 @@
     <!--<![endif]-->
 
     <script type="text/javascript">
-      window.onload = function()
-      {
-        var demo = document.getElementById("demo");
-        
-        demo.className = "";
-        
-      }
       function zoomIn(id)
       {
         var mainDiv = document.getElementById(id);
@@ -92,8 +85,9 @@
             <nav>
               <ul id="demo2">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="team.html">Team Mates</a></li>
-                <li><a href="work_with_us.html">Work with us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about_us.html">About Us</a></li>
               </ul>
             </nav>
@@ -105,8 +99,9 @@
             <nav>
               <ul style="margin-top:70px;" id="demo2">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="team.html">Team Mates</a></li>
-                <li><a href="work_with_us.html">Work with us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about_us.html">About Us</a></li>
               </ul>
             </nav>
@@ -132,8 +127,9 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse" >
               <ul class="nav navbar-nav" style="font-size: 16px">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="team.html">Team Mates</a></li>
-                <li><a href="work_with_us.html">Work with us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li class="active"><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about_us.html">About Us</a></li>
               </ul>
             </div>
@@ -148,7 +144,7 @@
       <!-- Tag Line -->
       <div class="row" id="demo">
         <div class="col-xs-12 text-center tagline">
-          <h1> Programming is <br> <strong>an Art</strong> </br> form that fights back</h1>
+          <h1 id="tag"> Programming is <br> <strong>an Art</strong> </br> form that fights back</h1>
         </div>
       </div>
       <!-- Tag Line Ends -->

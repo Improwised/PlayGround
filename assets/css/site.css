@@ -32,7 +32,6 @@ body{
 
 /* Menu / nav bar. */
 nav ul{
-  padding: 0 15px;
   margin-top: 75px;
   font: 19px Helvetica, Verdana, Tahoma;
   list-style: none;
