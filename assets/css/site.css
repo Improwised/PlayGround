@@ -411,6 +411,7 @@ nav ul li a:hover
   /*border: 1px solid #111;*/
   width: 361px;
   height: 150px;
+  margin-left:100px;
 }
 
 .roundrect img
@@ -441,6 +442,11 @@ nav ul li a:hover
   padding-left: 25px;
   padding-right: 5px;
   
+}
+
+#new_member{
+  padding-top: 200px;
+  /*margin-bottom: 10px;*/
 }
 
 .member a{
