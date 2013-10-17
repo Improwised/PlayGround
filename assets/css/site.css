@@ -6,6 +6,8 @@ body{
   font-family:sans-serif;
 }
 
+ul{margin:0;padding:0;}
+
 .round{
   border-radius: 0px; /* one half of ( (border * 2) + height + padding ) */
   color:#00AFDA ;
@@ -307,11 +309,14 @@ border-color: #74B64A;
   color:black;
 }
 .member a:hover .twitter , .member a:focus .twitter{
-  transition : 0.5s;
   color:#00a0d1;
 }
 .member a:hover .skype , .member a:focus .skype{
   color:#00A3FF;
+}
+
+.member a:hover .linkedin , .member a:focus .linkedin{
+  color:#4875B4;
 }
 
 .person{
