@@ -327,7 +327,7 @@ box-shadow: 0px 0px 5px black;
 }
 
 .teamhead{
-color: black;
+color: #303030;
 margin-left: -45px;
 margin-top: 50px;
 letter-spacing: 1px;
@@ -335,6 +335,6 @@ letter-spacing: 1px;
 }
 
 .teamheadmobile{
-color: black;
+color: #303030;
 letter-spacing: 1px;
 }
